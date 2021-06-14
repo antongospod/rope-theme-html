@@ -12,7 +12,7 @@ jobs:
     steps:
       # Делаем checkout ветки
       - name: Checkout
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
      
       # Доставляем собранное приложение на сервер
       - name: Deploy to Server
