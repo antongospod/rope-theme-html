@@ -1,1 +1,1 @@
-# rope-theme-html repo
+# rope-theme-html
