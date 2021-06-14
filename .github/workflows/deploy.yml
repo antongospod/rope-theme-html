@@ -23,7 +23,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: ${{ env.BUILD_SCRIPT_OUTPUT }}
-          target: /
+          target: "/"
           strip_components: 1
       - name: Print Info
         run: echo "Deployed"
