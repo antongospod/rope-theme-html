@@ -22,7 +22,8 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          target: ${{ secrets.SSH_PATH }}
+          source: ${{ env.BUILD_SCRIPT_OUTPUT }}
+          target: /
           strip_components: 1
       - name: Print Info
         run: echo "Deployed"
