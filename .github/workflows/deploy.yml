@@ -7,7 +7,7 @@ on:
 
 env:
   DEPLOY_PATH: /var/www/antongospod.ru/html
-  BUILD_SCRIPT_OUTPUT: dist
+  BUILD_SCRIPT_OUTPUT: /
 
 jobs:
   deploy:
