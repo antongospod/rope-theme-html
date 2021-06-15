@@ -7,8 +7,8 @@ on:
       - main
 
 env:
-  DEPLOY_PATH: /var/www/antongospod.ru/
-  BUILD_SCRIPT_OUTPUT: deploy.tarhtml
+  DEPLOY_PATH: /var/www/antongospod.ru/html
+  BUILD_SCRIPT_OUTPUT: deploy.tar
 
 jobs:
   deploy:
