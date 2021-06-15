@@ -3,7 +3,6 @@ name: CI
 on:
   push:
     branches:
-      - master
       - main
 
 env:
@@ -33,4 +32,4 @@ jobs:
           target: ${{ env.DEPLOY_PATH }}/${{ env.BRANCH_NAME }}
           strip_components: 1
       - name: Print Info
-        run: echo "Deployed at https://${BRANCH_NAME}.app.antongospod.ru/"
+        run: echo "Deployed at http://www.${BRANCH_NAME}.bulanovhtml.antongospod.ru/"
