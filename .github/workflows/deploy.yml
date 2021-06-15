@@ -1,13 +1,10 @@
 name: CI
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
 
 env:
   DEPLOY_PATH: /var/www/antongospod.ru/html
-  BUILD_SCRIPT_OUTPUT: /
+  BUILD_SCRIPT_OUTPUT: dist
 
 jobs:
   deploy:
@@ -27,4 +24,4 @@ jobs:
           target: ${{ env.DEPLOY_PATH }}/${{ env.BRANCH_NAME }}
           strip_components: 1
       - name: Print Info
-        run: echo "Deployed at http://www.${BRANCH_NAME}.bulanovhtml.antongospod.ru/"
+        run: echo "Deployed at http://${BRANCH_NAME}.bulanovhtml.antongospod.ru/"
