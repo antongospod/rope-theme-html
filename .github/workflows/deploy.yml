@@ -1,4 +1,4 @@
-name: Deploy
+name: CI
 
 on:
   push:
@@ -6,14 +6,27 @@ on:
       - master
       - main
 
+env:
+  DEPLOY_PATH: /var/www/antongospod.ru
+  BUILD_SCRIPT_OUTPUT: deploy.tar
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # Делаем checkout ветки
-      - name: Checkout
-        uses: actions/checkout@v2
-     
+      # Делаем checkout текущей ветки
+      - uses: actions/checkout@v2
+      # Записываем в переменные окружения имя текущей ветки
+      # Чтобы избежать конфиликтов с URL, меняем точки на _, а слеши на минусы
+      - name: Get branch name
+        shell: bash
+        run: echo "::set-env name=BRANCH_NAME::$(echo ${GITHUB_REF#refs/heads/} | sed 's/\//-/g' | sed 's/\./_/g')"
+        
+      - name: Run a multi-line script
+        run: |
+          mkdir ../build
+          cp -TR . ../build
+          tar -cvf deploy.tar ../build/
       # Доставляем собранное приложение на сервер
       - name: Deploy to Server
         uses: appleboy/scp-action@master
@@ -22,8 +35,8 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: 'dist'
-          target: ${{ secrets.SSH_PATH }}
+          source: ${{ env.BUILD_SCRIPT_OUTPUT }}
+          target: ${{ env.DEPLOY_PATH }}/${{ env.BRANCH_NAME }}
           strip_components: 1
       - name: Print Info
-        run: echo "Deployed"
+        run: echo "Deployed at https://${BRANCH_NAME}.app.example.ru/"
