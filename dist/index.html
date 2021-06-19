@@ -20,54 +20,58 @@
     <body>
         <div class="main-wrapper">
             <header class="header">
-                <div class="info header-info">
-                    <div class="logo header-logo"></div>
-                    <div class="address header-address"></div>
-                    <div class="phone header-phone"></div>
-                    <div class="request-call header-request-call"></div>
-                    <div class="lang header-lang"></div>
+                <div class="header-info container">
+                    <div class="logo header-logo">
+                        <img src="../dist/img/logo-header.svg" alt="logo" />
+                    </div>
+                    <div class="address header-address">
+                        <span class="icon icon-address"></span
+                        ><span class="header-address__text"
+                            >г. Волгоград, улица Казахская 43</span
+                        >
+                    </div>
+                    <div class="phone header-phone">
+                        <span class="icon icon-phone-circle"></span
+                        ><a href="tel:+78442501670" class="phone__link"
+                            >+7 (8442) 50-16-70</a
+                        >
+                    </div>
+
+                    <button class="btn btn_orange header__request-call">Заказать звонок</button>
+
+                    <div class="lang header-lang">RUS</div>
                 </div>
                 <div class="nav header-nav">
-                    <div class="container">
-                        <nav class="nav-wrapper">
-                            <ul class="nav-list header-nav-list">
-                                <li
-                                    class="nav-list__item header-nav-list__item"
-                                >
-                                    <a class="nav__link" href=""> главная </a>
-                                </li>
-                                <li
-                                    class="nav-list__item header-nav-list__item"
-                                >
-                                    <a class="nav__link" href=""> Продукция </a>
-                                </li>
-                                <li
-                                    class="nav-list__item header-nav-list__item"
-                                >
-                                    <a class="nav__link" href="">
-                                        Контрактное производство
-                                    </a>
-                                </li>
-                                <li
-                                    class="nav-list__item header-nav-list__item"
-                                >
-                                    <a class="nav__link" href="">
-                                        информация
-                                    </a>
-                                </li>
-                                <li
-                                    class="nav-list__item header-nav-list__item"
-                                >
-                                    <a class="nav__link" href=""> Услуги </a>
-                                </li>
-                                <li
-                                    class="nav-list__item header-nav-list__item"
-                                >
-                                    <a class="nav__link" href=""> Контакты </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+                    <nav class="container">
+                        <ul class="nav-list header-nav-list">
+                            <li
+                                class="
+                                    nav-list__item
+                                    header-nav-list__item
+                                    header-nav-list__item--active
+                                "
+                            >
+                                <a class="nav__link" href=""> Главная </a>
+                            </li>
+                            <li class="nav-list__item header-nav-list__item">
+                                <a class="nav__link" href=""> Продукция </a>
+                            </li>
+                            <li class="nav-list__item header-nav-list__item">
+                                <a class="nav__link" href="">
+                                    Контрактное производство
+                                </a>
+                            </li>
+                            <li class="nav-list__item header-nav-list__item">
+                                <a class="nav__link" href=""> Информация </a>
+                            </li>
+                            <li class="nav-list__item header-nav-list__item">
+                                <a class="nav__link" href=""> Услуги </a>
+                            </li>
+                            <li class="nav-list__item header-nav-list__item">
+                                <a class="nav__link" href=""> Контакты </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </header>
             <main class="main">
@@ -88,7 +92,7 @@
                     <nav class="nav-wrapper">
                         <ul class="nav-list header-nav-list">
                             <li class="nav-list__item footer-nav-list__item">
-                                <a class="nav__link" href=""> главная </a>
+                                <a class="nav__link" href=""> Главная </a>
                             </li>
                             <li class="nav-list__item footer-nav-list__item">
                                 <a class="nav__link" href=""> Продукция </a>
@@ -99,7 +103,7 @@
                                 </a>
                             </li>
                             <li class="nav-list__item footer-nav-list__item">
-                                <a class="nav__link" href=""> информация </a>
+                                <a class="nav__link" href=""> Информация </a>
                             </li>
                             <li class="nav-list__item footer-nav-list__item">
                                 <a class="nav__link" href=""> Услуги </a>

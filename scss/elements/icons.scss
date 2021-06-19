@@ -1,0 +1,13 @@
+.icon {
+    width: 19px;
+    height: 19px;
+    display: block;
+    background-size: contain !important; 
+
+    &-address {
+        background: url('../../dist/img/icons/map.svg') no-repeat center center;
+    }
+    &-phone-circle {
+        background: url('../../dist/img/icons/phone-circle.svg') no-repeat center center;
+    }
+}

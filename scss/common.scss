@@ -1,4 +1,27 @@
 @import "helpers/_helpers.scss";
+/* Fonts
+   ========================================================================== */
+
+@font-face {
+    font-family: "PFDinTextPro-Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("PFDinTextPro-Regular"),
+        url("../dist/fonts/PFDinTextPro-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PFDinTextPro-Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("PFDinTextPro-Bold"),
+        url("../dist/fonts/PFDinTextPro-Bold.woff") format("woff");
+}
+body {
+    font-family: PFDinTextPro-Regular, sans-serif;
+    color: $black;
+}
+
 .main-wrapper {
     height: 100vh;
     display: flex;
@@ -17,16 +40,6 @@
     flex: 0 0 auto;
 }
 
-/* Fonts
-   ========================================================================== */
-
-@font-face {
-	font-family: "PFDinTextPro-Regular";
-	font-style: normal;
-	font-weight: normal;
-	src: local("PFDinTextPro-Regular"),
-		url("../dist/fonts/PFDinTextPro-Regular.woff") format("woff");
-}
 /* Buttons
    ========================================================================== */
 .btn {
@@ -35,6 +48,7 @@
     line-height: 120%;
     border-radius: 50px;
     color: white;
+    padding: 7px;
 }
 
 .btn:active {
@@ -51,13 +65,12 @@
 }
 
 .btn_orange {
-    background:  linear-gradient(360deg, #E2A03B 0%, #EECA4D 100%);
+    background: linear-gradient(360deg, #e2a03b 0%, #eeca4d 100%);
     border: none;
-    padding: 15px;
 }
 
 .btn_orange:hover {
-    background: linear-gradient(360deg, #E8A847 0%, #FBCF35 100%);
+    background: linear-gradient(360deg, #e8a847 0%, #fbcf35 100%);
 }
 
 .btn_outline-orange {
@@ -67,27 +80,78 @@
     height: 50px;
     font-size: 16px;
     line-height: 19px;
-    padding: 15px 0;
 }
 
 .btn_outline-orange:hover {
-    background-image: linear-gradient(360deg, #E2A03B 0%, #EECA4D 100%);
+    background-image: linear-gradient(360deg, #e2a03b 0%, #eeca4d 100%);
     border: none;
 }
 
-*,body{
-    color:$black;
-    font-family: $dintext;
-}
-
-a {
-    color: #E2A03B;
-    text-transform: capitalize;
-
-    &:hover {
-        color:#F9BC02;
-        text-decoration: none;
-        
+nav {
+    li {
+        list-style: none;
     }
 }
 
+a {
+    color: #e2a03b;
+
+    &:hover {
+        color: #f9bc02;
+        text-decoration: none;
+    }
+}
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+}
+.logo {
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+.phone,
+.address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .icon {
+        margin-right: 10px;
+    }
+}
+
+.address {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3b3d3e;
+}
+
+.phone {
+    &__link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: right;
+        color: #3b3d3e;
+    }
+}
