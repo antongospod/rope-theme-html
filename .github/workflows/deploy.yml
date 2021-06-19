@@ -1,6 +1,8 @@
 name: CI
 
-on: [push]
+on:
+  push:
+    branches: [ main, development ]
 
 env:
   DEPLOY_PATH: /var/www/antongospod.ru/html
