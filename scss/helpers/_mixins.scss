@@ -1,0 +1,103 @@
+
+// Get links smooth color change
+@mixin link-light($color, $hover-color) {
+  color: $color;
+  transition: color .35s ease;
+  text-decoration: none;
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+// Get background color smooth change
+@mixin bg-light($color) {
+  transition: background 0.35s ease;
+  &:hover {
+    background: $color;
+  }
+}
+
+// box shadow
+@mixin shadows($hor, $vert, $blur, $spread, $color, $opacity) {
+  box-shadow: $hor $vert $blur $spread rgba($color,$opacity);
+}
+
+//text shadow
+@mixin  text-shadows($hor, $vert, $blur, $opacity, $color) {
+  text-shadow: $hor $vert $blur rgba($color, $opacity);
+}
+
+//ovrlay
+@mixin overlay($color, $opacity) {
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color, $opacity);
+    transition: background-color .35s ease;
+  }
+}
+
+// Media breakpoints
+@mixin smaller-phone {
+  @media screen and (max-width: $xs-break) {
+    @content;
+  }
+}
+@mixin big-phone{
+  @media screen and (max-width: $sm-break) {
+    @content;
+  }
+}
+@mixin phone-only {
+  @media screen and (max-width: $md-break - 1) {
+    @content;
+  }
+}
+@mixin tablet-only {
+  @media screen and (min-width: $md-break) and (max-width: $lg-break - 1) {
+    @content;
+  }
+}
+@mixin tablet-up {
+  @media screen and (min-width: $md-break) {
+    @content;
+  }
+}
+@mixin tablet-down {
+  @media screen and (max-width: $lg-break - 1) {
+    @content;
+  }
+}
+@mixin desktop-only {
+  @media screen and (min-width: $lg-break) and (max-width: $xl-break - 1) {
+    @content;
+  }
+}
+@mixin desktop-up {
+  @media screen and (min-width: $lg-break) {
+    @content;
+  }
+}
+@mixin desktop-down {
+  @media screen and (max-width: $lg-break) {
+    @content;
+  }
+}
+
+@mixin xl-only {
+  @media screen and (min-width: $xl-break) {
+    @content;
+  }
+}
+
+@mixin simple-list {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+}
+

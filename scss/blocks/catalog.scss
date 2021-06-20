@@ -1,0 +1,43 @@
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 30px;
+
+    @media screen and (max-width : 920px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-width : 620px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width : 420px) {
+        grid-template-columns: 1fr;
+    }
+
+    &-card {
+        width: 270px;
+        height: 330px;
+        background: #ffffff;
+        text-align: center;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+
+        &__img {
+            width: 196px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 120%;
+            text-align: center;
+            color: #3b3d3e;
+        }
+    }
+}
