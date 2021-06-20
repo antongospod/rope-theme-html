@@ -131,6 +131,9 @@ a {
         align-items: center;
         justify-content: center;
         height: 100%;
+
+        .nav__link {
+        }
     }
 }
 .logo {
@@ -162,7 +165,7 @@ a {
 .phone {
     &__link {
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 20px;
         line-height: 24px;
         text-align: right;
@@ -272,4 +275,36 @@ input {
         line-height: 16px;
         color: #88929b;
     }
+}
+.request-link {
+    border-bottom: 1px dashed $primary;
+    cursor: pointer;
+
+    &:hover {
+        border-bottom: 1px solid $primary;
+    }
+}
+.container {
+    max-width: 1210px !important;
+}
+.bg-dark-grey {
+    background: #f1f2f4;
+}
+
+.bg-light-grey {
+    background: #f8f9fb;
+}
+
+.copyright {
+    height: 70px;
+    padding: 30px 0;
+}
+.privacy {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: right;
+    color: #88929b;
+    padding: 30px 0;
 }
