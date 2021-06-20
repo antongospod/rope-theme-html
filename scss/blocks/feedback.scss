@@ -1,0 +1,32 @@
+.feedback {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 536px;
+    background: url("../img/bg-feedback.png") no-repeat;
+
+    h2,
+    h3 {
+        color: #fff;
+    }
+
+    &-wrapper {
+        max-width: 880px;
+        width: 100%;
+        text-align: center;
+    }
+    &-form {
+        .btn {
+            width: 280px;
+            height: 50px;
+        }
+    }
+    .form-item {
+        width: 280px;
+    }
+    .subheader {
+        margin-top: 10px;
+    }
+}
