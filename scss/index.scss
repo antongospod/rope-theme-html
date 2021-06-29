@@ -6,11 +6,15 @@
 
 @import "blocks/header.scss";
 @import "blocks/main.scss";
-@import "blocks/catalog.scss";
+@import "blocks/catalog-list.scss";
 @import "blocks/feedback.scss";
 @import "blocks/footer.scss";
+@import "blocks/side-menu.scss";
 
 @import "pages/home-page.scss";
+@import "pages/catalog-page.scss";
+@import "pages/404-page.scss";
+@import "pages/contacts.scss";
 
 
 

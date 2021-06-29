@@ -101,6 +101,32 @@ h2 {
     border: none;
 }
 
+.carousel-indicators {
+    background: initial;
+    z-index: 15;
+    position: absolute;
+}
+
+.carousel-indicators li {
+    background-color: initial;
+    margin-left: 12px;
+}
+
+.carousel-indicators li:before {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    display: block;
+    background-color: grey;
+    border-radius: 8px;
+    width: 9px;
+    height: 9px;
+}
+
+.carousel-indicators li:active {
+    opacity: 0.9;
+    transform: scale(0.55);
+}
 nav {
     li {
         list-style: none;
@@ -173,10 +199,13 @@ a {
     }
 }
 .card {
+    box-shadow: none;
+
     &-header {
         background-color: initial;
         border: none;
         overflow: hidden;
+        padding: 0;
     }
 
     &-body {
@@ -184,6 +213,7 @@ a {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        padding: 10px 0;
     }
 }
 
@@ -307,4 +337,77 @@ input {
     text-align: right;
     color: #88929b;
     padding: 30px 0;
+}
+.breadcrumb {
+    background-color: initial;
+}
+
+.breadcrumb-item::before {
+    display: none;
+}
+
+.breadcrumb-item + .active {
+    color: $primary;
+}
+
+.breadcrumb-item + .active {
+    text-decoration-line: underline;
+    color: $primary;
+}
+
+.breadcrumb-item a {
+    color: rgba(112, 112, 112, 0.69);
+    text-decoration: none;
+}
+
+.breadcrumb-item img {
+    width: 10px;
+    height: 10px;
+    margin: 0 15px;
+}
+.pagination {
+    border: #bcc3d2;
+    margin-top: 60px;
+}
+
+.pagination .page-link {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+    color: #3b3d3e;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #8cad03;
+    border-color: #8cad03;
+}
+
+.page-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/bg-title.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 60px;
+}
+
+.page-header h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #3b3d3e;
+}
+
+@media screen and (max-width: 991px) {
+    .page-header h1 {
+        font-size: 18px;
+        line-height: 160%;
+    }
 }

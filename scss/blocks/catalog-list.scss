@@ -1,4 +1,4 @@
-.catalog {
+.catalog-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
@@ -14,9 +14,10 @@
         grid-template-columns: 1fr;
     }
 
-    &-card {
+    .catalog-card {
         width: 270px;
-        height: 330px;
+        min-height: 330px;
+        height: 100%;
         background: #ffffff;
         text-align: center;
         border-radius: 10px;
@@ -33,11 +34,12 @@
 
         .title {
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 18px;
             line-height: 120%;
             text-align: center;
             color: #3b3d3e;
+            padding: 20px;
         }
     }
 }

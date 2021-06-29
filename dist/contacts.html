@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div
+            class="modal fade"
+            id="requestCallModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="requestCallModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title aniron color-green">
+                            Still have questions?
+                        </h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Leave your contact details and our managers will
+                            contact you
+                        </p>
+                        <form action="" class="modal-form">
+                            <input
+                                class="modal-form__input"
+                                placeholder="Your name"
+                                type="text"
+                            />
+                            <input
+                                class="modal-form__input"
+                                placeholder="Your phone"
+                                type="number"
+                            />
+                        </form>
+                        <button
+                            type="button"
+                            class="btn btn-orange"
+                            data-dismiss="modal"
+                        >
+                            Request a call
+                        </button>
+                        <div class="feedback__form-item">
+                            <input
+                                type="checkbox"
+                                id="personal-data-check"
+                                class="checkbox"
+                            />
+                            <label
+                                for="personal-data-check"
+                                class="feedback__label"
+                                >I agree to the processing of my personal data
+                                in accordance with the privacy policy</label
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header-info container">
+                <div class="logo header-logo">
+                    <img src="../dist/img/logo-header.svg" alt="logo" />
+                </div>
+                <div class="address header-address">
+                    <span class="icon icon-address"></span
+                    ><span class="header-address__text"
+                        >г. Волгоград, улица Казахская 43</span
+                    >
+                </div>
+                <div class="phone header-phone">
+                    <span class="icon icon-phone-circle"></span
+                    ><a href="tel:+78442501670" class="phone__link"
+                        >+7 (8442) 50-16-70</a
+                    >
+                </div>
+
+                <button class="btn btn_orange header__request-call">
+                    Заказать звонок
+                </button>
+
+                <div class="lang header-lang">RUS</div>
+            </div>
+            <div class="nav header-nav">
+                <nav class="container">
+                    <ul class="nav-list header-nav-list">
+                        <li
+                            class="
+                                nav-list__item
+                                header-nav-list__item
+                                header-nav-list__item--active
+                            "
+                        >
+                            <a class="nav__link" href=""> Главная </a>
+                        </li>
+                        <li class="nav-list__item header-nav-list__item">
+                            <a class="nav__link" href="catalog.html">
+                                Продукция
+                            </a>
+                        </li>
+                        <li class="nav-list__item header-nav-list__item">
+                            <a class="nav__link" href="">
+                                Контрактное производство
+                            </a>
+                        </li>
+                        <li class="nav-list__item header-nav-list__item">
+                            <a class="nav__link" href=""> Информация </a>
+                        </li>
+                        <li class="nav-list__item header-nav-list__item">
+                            <a class="nav__link" href=""> Услуги </a>
+                        </li>
+                        <li class="nav-list__item header-nav-list__item">
+                            <a class="nav__link" href=""> Контакты </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="page-header">
+                <h1 class="aniron">contacts</h1>
+            </section>
+            <div class="contacts">
+                <div class="left-column">
+                    <div class="contacts__card">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html">Main</a>
+                                </li>
+                                <li class="breadcrumb-item active">
+                                    <img
+                                        src="./img/icons/arrow-right.svg"
+                                        alt=""
+                                    />About
+                                </li>
+                            </ol>
+                        </nav>
+                        <div class="phones">
+                            <div>
+                                <img
+                                    class="icon"
+                                    src="./img/icons/phone.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a
+                                    href="tel:+74952491162"
+                                    class="phone__number pb-2"
+                                    >+7 495 249-11-62</a
+                                >
+                                <a
+                                    href="tel:88003029229"
+                                    class="phone__number pb-2"
+                                    >8 800 302-92-29</a
+                                >
+                                <div class="social justify-content-start">
+                                    <a href="" class="pr-4">
+                                        <img
+                                            src="./img/icons/telegram-color.svg"
+                                            alt="telegram"
+                                        />
+                                    </a>
+                                    <a href="" class="pr-4">
+                                        <img
+                                            src="./img/icons/watsapp-color.svg"
+                                            alt="whatsapp"
+                                        />
+                                    </a>
+                                    <a href="">
+                                        <img
+                                            src="./img/icons/instagram.svg"
+                                            alt="instagram"
+                                        />
+                                    </a>
+                                </div>
+                                <a
+                                    href=""
+                                    class="request-link"
+                                    data-toggle="modal"
+                                    data-target="#requestCallModal"
+                                    >Request a call</a
+                                >
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="d-flex">
+                                <div>
+                                    <img
+                                        src="./img/icons/mail.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </div>
+                                <div>
+                                    <a
+                                        href="mailto:info@tros.ru"
+                                        class="color-black"
+                                        >info@tros.ru</a
+                                    >
+
+                                    <a
+                                        href="mailto:info@tros.ruu"
+                                        class="request-link"
+                                        >Send an email</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fax">
+                            <div class="d-flex">
+                                <div>
+                                    <img
+                                        src="./img/icons/fax.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </div>
+                                <div>
+                                    <span>+7 495 640-51-95</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="d-flex">
+                                <div>
+                                    <img
+                                        src="./img/icons/map.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </div>
+                                <div>
+                                    <strong>Location:</strong>
+                                    <span
+                                        >15, 1st Krasnogvardeysky proezd,
+                                        Moscow, 123100, Russia; floor 17</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A941da84c4bc08ebcfacf7e011aaee7a8484d143f198a50191a8d7fc50cb923cf&amp;source=constructor"
+                        width="100%"
+                        height="599"
+                        frameborder="0"
+                    ></iframe>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="w-100 bg-light-grey">
+                <div class="container">
+                    <div class="info footer-info">
+                        <div class="logo footer-logo">
+                            <img src="./img/logo-header.svg" alt="" />
+                        </div>
+                        <div class="d-flex">
+                            <a class="request-link mr-5">Заказать звонок</a>
+                            <div class="phone footer-phone">
+                                <span class="icon icon-phone-circle"></span
+                                ><a href="tel:+78442501670" class="phone__link"
+                                    >+7 (8442) 50-16-70</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="nav footer-nav">
+                        <ul class="nav-list footer-nav-list">
+                            <li class="nav-list__item footer-nav-list__item">
+                                <a class="nav__link" href=""> Главная </a>
+                            </li>
+                            <li class="nav-list__item footer-nav-list__item">
+                                <a class="nav__link" href=""> Продукция </a>
+                            </li>
+                            <li class="nav-list__item footer-nav-list__item">
+                                <a class="nav__link" href="">
+                                    Контрактное производство
+                                </a>
+                            </li>
+                            <li class="nav-list__item footer-nav-list__item">
+                                <a class="nav__link" href=""> Информация </a>
+                            </li>
+                            <li class="nav-list__item footer-nav-list__item">
+                                <a class="nav__link" href=""> Услуги </a>
+                            </li>
+                            <li class="nav-list__item footer-nav-list__item">
+                                <a class="nav__link" href=""> Контакты </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer-text">
+                        <p>
+                            Информация на сайте не является публичной офертой.
+                            По вопросам наличия и цены товара обращайтесь к
+                            менеджерам по указанным телефонам.
+                        </p>
+                        <p>
+                            При использовании материалов с сайта, ссылка на
+                            источник обязательна.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 bg-dark-grey">
+                <div class="container d-flex justify-content-between">
+                    <div class="copyright">© ИП Буланов П.А. 2021 г.</div>
+                    <a href="" class="privacy">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./js/app.js"></script>
+    </body>
+</html>
