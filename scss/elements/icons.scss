@@ -10,4 +10,12 @@
     &-phone-circle {
         background: url('../img/icons/phone-circle.svg') no-repeat center center;
     }
+    &-arrow-right {
+        width: 8px;
+        height: 10px;
+        mask: url('../img/icons/arrow-right.svg');
+        mask-repeat: no-repeat;
+        background-color: initial;
+  
+    }
 }

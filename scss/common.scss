@@ -34,6 +34,12 @@ h2 {
 h2 {
     margin: 0 0 41px;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 120%;
+    }
 }
 
 .main-wrapper {
@@ -135,6 +141,7 @@ nav {
 
 a {
     color: #e2a03b;
+    cursor: pointer;
 
     &:hover {
         color: #f9bc02;
@@ -245,6 +252,19 @@ input::-webkit-inner-spin-button {
 
 input {
     outline: none;
+}
+
+.more-detail {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $primary;
+
+    .icon {
+        margin: 0 7px;
+        background-color: $primary;
+    }
 }
 .checkbox {
     position: absolute;
