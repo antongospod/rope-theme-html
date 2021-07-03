@@ -26,6 +26,19 @@
     .form-item {
         width: 280px;
     }
+    .agreement {
+        width: 520px;
+
+        @include phone-only {
+            width: 260px;
+            text-align: left;
+
+            .checkbox + label:before {
+                position: relative;
+                top: -14px;
+            }
+        }
+    }
     .subheader {
         margin-top: 10px;
     }

@@ -36,7 +36,10 @@
                             data-dismiss="modal"
                             aria-label="Close"
                         >
-                            <span class="icon icon-close" aria-hidden="true"></span>
+                            <span
+                                class="icon icon-close"
+                                aria-hidden="true"
+                            ></span>
                         </button>
                     </div>
                     <div class="modal-body">
@@ -86,7 +89,7 @@
         </div>
         <div class="main-wrapper">
             <header class="header">
-                <div class="header-info container">
+                <div class="header-info container d-none d-lg-flex">
                     <div class="logo header-logo">
                         <img src="../dist/img/logo-header.svg" alt="logo" />
                     </div>
@@ -113,7 +116,7 @@
 
                     <div class="lang header-lang">RUS</div>
                 </div>
-                <div class="nav header-nav">
+                <div class="nav header-nav d-none d-lg-flex">
                     <nav class="container">
                         <ul class="nav-list header-nav-list">
                             <li
@@ -143,6 +146,64 @@
                             </li>
                             <li class="nav-list__item header-nav-list__item">
                                 <a class="nav__link" href=""> Контакты </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mobile-menu d-block d-lg-none">
+                    <div class="mobile-menu__header">
+                        <img
+                            class="mobile-menu__logo"
+                            src="./img/logo-header.svg"
+                            alt="logo"
+                        />
+                        <div class="burger-btn">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <nav class="mobile-menu__body">
+                        <div class="phone-contacts">
+                            <div class="phone header-phone">
+                                <span class="icon icon-phone-circle"></span
+                                ><a href="tel:+78442501670" class="phone__link"
+                                    >+7 (8442) 50-16-70</a
+                                >
+                            </div>
+                            <button
+                                type="button"
+                                class="btn btn_orange"
+                                data-toggle="modal"
+                                data-target="#requestCallModal"
+                            >
+                                Заказать звонок
+                            </button>
+                        </div>
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__list_item">
+                                <a href="index.html">Главная</a>
+                            </li>
+                            <li class="mobile-menu__list_item">
+                                <a href="catalog.html">Продукция</a>
+                            </li>
+                            <li class="mobile-menu__list_item">
+                                <a href="article.html"
+                                    >Контрактное производство</a
+                                >
+                            </li>
+                            <li
+                                class="
+                                    mobile-menu__list_item
+                                    mobile-menu__list_item--active
+                                "
+                            >
+                                <a href="news.html">Информация</a>
+                            </li>
+                            <li class="mobile-menu__list_item">
+                                <a href="article.html">Услуги</a>
+                            </li>
+                            <li class="mobile-menu__list_item">
+                                <a href="contacts.html">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -337,8 +398,12 @@
                             <div
                                 class="
                                     d-flex
-                                    justify-content-between
-                                    align-items-end
+                                    flex-column 
+                                    flex-md-row
+                                    justify-content-center
+                                    align-items-center
+                                    justify-content-md-between
+                                    align-items-md-end
                                     my-4
                                 "
                             >
@@ -353,7 +418,7 @@
                                         placeholder="Телефон"
                                     />
                                 </div>
-                                <button class="btn btn_orange">
+                                <button class="btn btn_orange mt-4 mt-md-0">
                                     Заказать звонок
                                 </button>
                             </div>
@@ -373,8 +438,12 @@
                                     <label
                                         for="personal-data-check"
                                         class="label agreement__label"
-                                        >Даю согласие на обработку моих
-                                        персональных данных</label
+                                        >
+                                        <div>
+                                            Я даю согласие на обработку моих
+                                            персональных данных в соответствии с
+                                            <a href="">политикой конфиденциальности</a>
+                                        </div></label
                                     >
                                 </div>
                             </div>
@@ -389,9 +458,18 @@
                             <div class="logo footer-logo">
                                 <img src="./img/logo-header.svg" alt="" />
                             </div>
-                            <div class="d-flex">
-                                <a class="request-link mr-5">Заказать звонок</a>
-                                <div class="phone footer-phone">
+                            <div
+                                class="
+                                    d-flex
+                                    flex-column-reverse
+                                    align-items-center
+                                    flex-md-row
+                                "
+                            >
+                                <a class="request-link mr-md-5"
+                                    >Заказать звонок</a
+                                >
+                                <div class="phone footer-phone my-3 my-md-0">
                                     <span class="icon icon-phone-circle"></span
                                     ><a
                                         href="tel:+78442501670"
@@ -453,7 +531,17 @@
                     </div>
                 </div>
                 <div class="w-100 bg-dark-grey">
-                    <div class="container d-flex justify-content-between">
+                    <div
+                        class="
+                            container
+                            d-flex
+                            justify-content-between
+                            flex-column
+                            align-items-center
+                            flex-md-row
+                            py-4 py-md-0
+                        "
+                    >
                         <div class="copyright">© ИП Буланов П.А. 2021 г.</div>
                         <a href="" class="privacy"
                             >Политика конфиденциальности</a
@@ -462,5 +550,6 @@
                 </div>
             </footer>
         </div>
+        <script src="./js/app.js"></script>
     </body>
 </html>

@@ -10,31 +10,63 @@
     flex-direction: column;
     justify-content: flex-start;
 
+
+    @include phone-only {
+        font-size: 16px;
+    }
+
     &-info {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 48px 0 6px;
+
+        @include phone-only {
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 0 22px;
+        }
     }
     &-logo {
         width: 138px;
         height: 54px;
+
+        @include phone-only {
+            width: 124px;
+            height: 48px;
+        }
     }
     &-nav {
         width: 100%;
         height: 58px;
-        border-bottom: 1px solid  #E0E6EE;
-        border-top: 1px solid #E0E6EE;
+        border-bottom: 1px solid #e0e6ee;
+        border-top: 1px solid #e0e6ee;
+
+        @include phone-only {
+            height: auto;
+        }
 
         &-list {
             width: 100%;
             justify-content: flex-start;
+
+            @include phone-only {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 0;
+            }
 
             &__item {
                 min-width: 72px;
                 text-align: left;
                 margin-right: 90px;
                 justify-content: left;
+
+                @include phone-only {
+                   justify-content: center;
+                   margin: 0;
+                   padding: 10px 0;
+                }
 
                 .nav__link {
                     font-style: normal;
@@ -53,5 +85,16 @@
     }
     &-text {
         margin: 34px 0 60px;
+
+        @include phone-only {
+            justify-content: center;
+            margin: 0;
+            padding: 20px 0;
+            text-align: center;
+
+            p:last-child {
+                margin-bottom: 0;
+            }
+         }
     }
 }

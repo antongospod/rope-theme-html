@@ -1,10 +1,10 @@
-// function mobileMenu(node, menu, wrapper) {
-// 	wrapper.addEventListener("click", () => {
-// 		node.classList.toggle(`${node.classList[0]}--active`);
-// 		menu.classList.toggle("active");
-// 		document.querySelector("body").classList.toggle("lock");
-// 	});
-// }
+function mobileMenu(node, menu, wrapper) {
+	wrapper.addEventListener("click", () => {
+		node.classList.toggle(`${node.classList[0]}--active`);
+		menu.classList.toggle("active");
+		document.querySelector("body").classList.toggle("lock");
+	});
+}
 
 // function indicatorsLength() {
 // 	let parents = document.querySelectorAll(".carousel-indicators");
@@ -14,11 +14,11 @@
 // 	});
 // }
 
-// mobileMenu(
-// 	document.querySelector(".burger-btn"),
-// 	document.querySelector(".mobile-menu__body"),
-// 	document.querySelector(".burger-btn__wrapper")
-// );
+mobileMenu(
+	document.querySelector(".burger-btn"),
+	document.querySelector(".mobile-menu__body"),
+	document.querySelector(".burger-btn")
+);
 // indicatorsLength();
 // window.addEventListener(
 // 	"resize",

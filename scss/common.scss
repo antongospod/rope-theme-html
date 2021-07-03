@@ -41,6 +41,9 @@ h2 {
         line-height: 120%;
     }
 }
+ul {
+    padding-inline-start: 0;
+}
 
 .main-wrapper {
     height: 100vh;
@@ -54,6 +57,9 @@ h2 {
 
 .main {
     flex: 1 0 auto;
+}
+.lock {
+    overflow: hidden;
 }
 
 .footer {
@@ -350,7 +356,6 @@ input {
     user-select: none;
 }
 .agreement {
-    width: 520px !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -383,8 +388,12 @@ input {
 }
 
 .copyright {
-    height: 70px;
+  
     padding: 30px 0;
+
+    @include phone-only {
+        padding: 6px 0;
+    }
 }
 .privacy {
     font-style: normal;
@@ -394,6 +403,10 @@ input {
     text-align: right;
     color: #88929b;
     padding: 30px 0;
+
+    @include phone-only {
+        padding: 6px 0;
+     }
 }
 .breadcrumb {
     background-color: initial;

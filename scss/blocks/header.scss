@@ -6,6 +6,15 @@
     width: 100%;
     margin: 0 auto;
 
+    @media screen and (max-width : 768px) {
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 45;
+        width: 100%;
+    }
+
     &__request-call {
         width: 192px;
     }
