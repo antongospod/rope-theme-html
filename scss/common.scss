@@ -215,9 +215,10 @@ a {
         color: #3b3d3e;
     }
 }
+.clearfix { clear: both; }
 .social {
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
 	align-items: center;
 	min-width: 270px;
 	padding: 20px 0 10px;
@@ -450,6 +451,10 @@ input {
     background-position: top;
     background-repeat: no-repeat;
     padding: 60px;
+
+    @media screen and (max-width: 991px) {
+        padding: 30px 10px;
+    }
 }
 
 .page-header h1 {
@@ -459,11 +464,10 @@ input {
     line-height: 120%;
     text-align: center;
     color: #3b3d3e;
-}
 
-@media screen and (max-width: 991px) {
-    .page-header h1 {
-        font-size: 18px;
-        line-height: 160%;
+    @media screen and (max-width: 991px) {
+        font-size: 35px;
     }
 }
+
+

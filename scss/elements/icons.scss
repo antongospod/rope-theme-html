@@ -2,32 +2,36 @@
     width: 20px;
     height: 20px;
     display: block;
-    background-size: contain !important; 
+    background-size: contain !important;
 
     &-address {
-        background: url('../img/icons/map.svg') no-repeat center center;
+        background: url("../img/icons/map.svg") no-repeat center center;
     }
     &-phone-circle {
-        background: url('../img/icons/phone-circle.svg') no-repeat center center;
+        background: url("../img/icons/phone-circle.svg") no-repeat center center;
     }
     &-arrow-right {
         width: 8px;
         height: 10px;
-        mask: url('../img/icons/arrow-right.svg');
+        mask: url("../img/icons/arrow-right.svg");
         mask-repeat: no-repeat;
         background-color: initial;
     }
     &-telegram-grey {
-        background: url('../img/icons/telegram.svg') no-repeat center center;
+        background: url("../img/icons/telegram.svg") no-repeat center center;
     }
     &-vk-grey {
-        background: url('../img/icons/vk.svg') no-repeat center center;
+        background: url("../img/icons/vk.svg") no-repeat center center;
     }
     &-instagram {
-        background: url('../img/icons/instagram.svg') no-repeat center center;
+        background: url("../img/icons/instagram.svg") no-repeat center center;
     }
     &-facebook-grey {
-        background: url('../img/icons/facebook.svg') no-repeat center center;
-
+        background: url("../img/icons/facebook.svg") no-repeat center center;
+    }
+    &-close {
+        width: 16px;
+        height: 16px;
+        background: url("../img/icons/close.svg") no-repeat center center;
     }
 }

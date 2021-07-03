@@ -3,6 +3,7 @@
     line-height: 140%;
     max-width: 1920px;
     margin: auto;
+    padding: 40px 0 80px;
     background: url("assets/img/background/about-bg-1.png") 0 0 no-repeat,
         url("assets/img/background/about-bg-2.svg") 100% 72% no-repeat;
 
@@ -18,7 +19,23 @@
         background-color: rgba(0, 0, 0, 0.1);
         min-height: 360px;
         width: 100%;
+
+        &_intext {
+            width: 360px;
+            height: 240px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            float: left;
+
+            image {
+
+            }
+        }
     }
+
     &__card {
         padding: 30px 25px;
         max-width: 1200px;

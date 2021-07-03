@@ -18,6 +18,72 @@
         </head>
     </head>
     <body>
+        <div
+            class="modal fade"
+            id="requestCallModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="requestCallModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Заказать звонок</h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span class="icon icon-close" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            оставьте свои контактные данныеи наш менеджер
+                            свяжется с вамидля уточнения деталей заказа
+                        </p>
+                        <form action="" class="modal-form">
+                            <input
+                                class="modal-form__input"
+                                placeholder="Ваше имя"
+                                type="text"
+                            />
+                            <input
+                                class="modal-form__input"
+                                placeholder="Ваш телефон"
+                                type="number"
+                            />
+                        </form>
+                        <button
+                            type="button"
+                            class="btn btn_orange"
+                            data-dismiss="modal"
+                        >
+                            Заказать консультацию
+                        </button>
+                        <div class="feedback__form-item">
+                            <input
+                                type="checkbox"
+                                id="personal-data-check-modal"
+                                class="checkbox"
+                            />
+                            <label
+                                for="personal-data-check-modal"
+                                class="feedback__label"
+                            >
+                                <div>
+                                    Я даю согласие на обработку моих
+                                    персональных данных в соответствии с
+                                    <a href="">политикой конфиденциальности</a>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="main-wrapper">
             <header class="header">
                 <div class="header-info container">
@@ -37,7 +103,11 @@
                         >
                     </div>
 
-                    <button class="btn btn_orange header__request-call">
+                    <button
+                        class="btn btn_orange header__request-call"
+                        data-toggle="modal"
+                        data-target="#requestCallModal"
+                    >
                         Заказать звонок
                     </button>
 
@@ -100,7 +170,9 @@
 
                         <section class="article">
                             <div class="card article__card">
-                                <h2>What you should know article pastille</h2>
+                                <h2>
+                                    Оборудование для плетения стального троса
+                                </h2>
                                 <div class="article__image mb-4">
                                     <img src="./img/article.png" alt="" />
                                 </div>
@@ -130,7 +202,9 @@
                                         транспорте.
                                     </p>
                                     <dl>
-                                        <dt class="heading">Машины сигарного типа серии RSN</dt>
+                                        <dt class="heading">
+                                            Машины сигарного типа серии RSN
+                                        </dt>
                                         <dd>
                                             Крутильные машины серии RSN
                                             предназначена для плетения канатов
@@ -194,42 +268,59 @@
                                             др.) или из стальной проволоки.
                                         </p>
                                     </blockquote>
-                                    <div class="row pt-3">
-                                        <div class="col-sm-4">
-                                            <img
-                                                src="./img/article-mini.png"
-                                                alt=""
-                                            />
-                                        </div>
-                                        <div class="col-sm-8">
-                                            <p></p>
-                                            <p></p>
-                                        </div>
-                                        <div class="social">
-                                            <a href="#" class="social__link">
-                                                <span
-                                                    class="
-                                                        icon icon-telegram-grey
-                                                    "
-                                                ></span>
-                                            </a>
-                                            <a href="#" class="social__link">
-                                                <span
-                                                    class="icon icon-vk-grey"
-                                                ></span>
-                                            </a>
-                                            <a href="#" class="social__link">
-                                                <span
-                                                    class="
-                                                        icon icon-facebook-grey
-                                                    "
-                                                ></span>
-                                            </a>
-
-                                            <span>Share in social media</span>
-                                        </div>
+                                    <div class="article__image_intext">
+                                        <img
+                                            src="./img/Dried-Aubergines-Slices 1.png"
+                                            class=""
+                                            alt=""
+                                        />
                                     </div>
-                                    <div class="col-sm-12"></div>
+
+                                    <p>
+                                        Бак для масла находится под держателем
+                                        калибра. Масло перекачивается
+                                        электронасосом через трубу в
+                                        маслосливное отверстие, а излишки масла
+                                        поступают непосредственно в масляный
+                                        бак.
+                                    </p>
+                                    <p>
+                                        На нижней стороне масляного бака
+                                        установлен трубчатый электронагреватель
+                                        сухого нагрева (для нагрева не требуется
+                                        слив масла), а температура регулируется
+                                        автоматически (температура нагрева до
+                                        140°C).
+                                    </p>
+                                    <p>
+                                        Бак для масла находится под держателем
+                                        калибра. Масло перекачивается
+                                        электронасосом через трубу в
+                                        маслосливное отверстие, а излишки масла
+                                        поступают непосредственно в масляный
+                                        бак. Бак для масла находится под
+                                        держателем калибра.
+                                    </p>
+                                    <div class="clearfix"></div>
+                                    <div class="social">
+                                        <a href="#" class="social__link">
+                                            <span
+                                                class="icon icon-telegram-grey"
+                                            ></span>
+                                        </a>
+                                        <a href="#" class="social__link">
+                                            <span
+                                                class="icon icon-vk-grey"
+                                            ></span>
+                                        </a>
+                                        <a href="#" class="social__link">
+                                            <span
+                                                class="icon icon-facebook-grey"
+                                            ></span>
+                                        </a>
+
+                                        <span>Поделиться в соц сетях</span>
+                                    </div>
                                 </div>
                             </div>
                         </section>
