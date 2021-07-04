@@ -17,6 +17,75 @@
 </head>
 
 <body>
+<div
+		class="modal fade"
+		id="requestCallModal"
+		tabindex="-1"
+		role="dialog"
+		aria-labelledby="requestCallModal"
+		aria-hidden="true"
+>
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Заказать звонок</h5>
+				<button
+						type="button"
+						class="close"
+						data-dismiss="modal"
+						aria-label="Close"
+				>
+                            <span
+		                            class="icon icon-close"
+		                            aria-hidden="true"
+                            ></span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p>
+					оставьте свои контактные данныеи наш менеджер
+					свяжется с вамидля уточнения деталей заказа
+				</p>
+				<form action="" class="modal-form">
+					<input
+							class="modal-form__input"
+							placeholder="Ваше имя"
+							type="text"
+					/>
+					<input
+							class="modal-form__input"
+							placeholder="Ваш телефон"
+							type="number"
+					/>
+				</form>
+				<button
+						type="button"
+						class="btn btn_orange"
+						data-dismiss="modal"
+				>
+					Заказать консультацию
+				</button>
+				<div class="feedback__form-item">
+					<input
+							type="checkbox"
+							id="personal-data-check-modal"
+							class="checkbox"
+					/>
+					<label
+							for="personal-data-check-modal"
+							class="feedback__label"
+					>
+						<div>
+							Я даю согласие на обработку моих
+							персональных данных в соответствии с
+							<a href="">политикой конфиденциальности</a>
+						</div>
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="main-wrapper">
 	<header class="header">
 		<div class="header-info container d-none d-lg-flex">
@@ -110,7 +179,7 @@
 					</button>
 				</div>
 				<ul class="mobile-menu__list">
-					<li class="mobile-menu__list_item">
+					<li class="mobile-menu__list_item mobile-menu__list_item--active">
 						<a href="index.html">Главная</a>
 					</li>
 					<li class="mobile-menu__list_item">
@@ -124,7 +193,7 @@
 					<li
 							class="
                                     mobile-menu__list_item
-                                    mobile-menu__list_item--active
+
                                 "
 					>
 						<a href="news.html">Информация</a>
@@ -173,12 +242,77 @@
 									/>
 								</div>
 								<div class="card-body">
-									<span class="title"></span>
-									<button
+									<span class="title">
+										Тросы буксировочные
+									</span>
+									<a href="catalog-item.html"
 											class="btn btn_outline-orange"
 									>
 										Подробнее
-									</button>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-list-item">
+							<div class="card catalog-card">
+								<div class="card-header">
+									<img
+											src="./img/Dried-Aubergines-Slices 1.png"
+											alt=""
+											class="catalog-card__image"
+									/>
+								</div>
+								<div class="card-body">
+									<span class="title">
+										Тросы буксировочные
+									</span>
+									<a href="catalog-item.html"
+											class="btn btn_outline-orange"
+									>
+										Подробнее
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-list-item">
+							<div class="card catalog-card">
+								<div class="card-header">
+									<img
+											src="./img/Dried-Aubergines-Slices 1.png"
+											alt=""
+											class="catalog-card__image"
+									/>
+								</div>
+								<div class="card-body">
+									<span class="title">
+										Тросы буксировочные
+									</span>
+									<a href="catalog-item.html"
+											class="btn btn_outline-orange"
+									>
+										Подробнее
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-list-item">
+							<div class="card catalog-card">
+								<div class="card-header">
+									<img
+											src="./img/Dried-Aubergines-Slices 1.png"
+											alt=""
+											class="catalog-card__image"
+									/>
+								</div>
+								<div class="card-body">
+									<span class="title">
+										Тросы буксировочные
+									</span>
+									<a href="catalog-item.html"
+											class="btn btn_outline-orange"
+									>
+										Подробнее
+									</a>
 								</div>
 							</div>
 						</div>
@@ -275,7 +409,7 @@
 			<section class="about">
 				<div class="about-wrapper">
 					<div class="about-bg">
-						<img src="./img/about-bg-2.png" alt=""/>
+
 					</div>
 
 					<div class="about-text">
@@ -311,14 +445,8 @@
 					<form action="" class="feedback-form">
 						<div
 								class="
-                                    d-flex
-                                    flex-column
-                                    flex-md-row
-                                    justify-content-center
-                                    align-items-center
-                                    justify-content-md-between
-                                    align-items-md-end
-                                    my-4
+								feedback-form-inner
+
                                 "
 						>
 							<div class="form-item">
@@ -332,7 +460,7 @@
 										placeholder="Телефон"
 								/>
 							</div>
-							<button class="btn btn_orange mt-4 mt-md-0">
+							<button class="btn btn_orange">
 								Заказать звонок
 							</button>
 						</div>
@@ -382,7 +510,8 @@
                                     flex-md-row
                                 "
 					>
-						<a class="request-link mr-md-5"
+						<a class="request-link mr-md-5" data-toggle="modal"
+						   data-target="#requestCallModal"
 						>Заказать звонок</a
 						>
 						<div class="phone footer-phone my-3 my-md-0">

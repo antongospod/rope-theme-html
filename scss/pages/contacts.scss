@@ -3,6 +3,10 @@
     margin: auto;
     display: flex;
     justify-content: center;
+
+    .icon {
+        margin: 10px 5px 0 0;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -74,7 +78,7 @@
 
 .contacts__card .fax {
     padding: 20px 0;
-    border-bottom: 1px dashed $primary;
+    border-bottom: 1px solid #d6dde4;
 }
 
 .contacts__card .location {

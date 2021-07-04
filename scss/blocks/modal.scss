@@ -1,13 +1,10 @@
 .modal-content {
     height: 445px;
     background: #ffffff;
+    margin: 0 auto;
 }
 .modal-dialog {
     max-width: 300px;
-
-    @include phone-only {
-        max-width: 100%;
-    }
 }
 .modal-content .modal-header {
     border-bottom: none;
@@ -64,7 +61,6 @@
 .modal-content .modal-body .btn_orange {
     width: 100%;
     padding: 15px;
-    max-width: 260px;
 }
 
 .modal-content .modal-body .feedback__label {

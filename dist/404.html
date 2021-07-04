@@ -11,6 +11,75 @@
 	<script src="js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+<div
+		class="modal fade"
+		id="requestCallModal"
+		tabindex="-1"
+		role="dialog"
+		aria-labelledby="requestCallModal"
+		aria-hidden="true"
+>
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Заказать звонок</h5>
+				<button
+						type="button"
+						class="close"
+						data-dismiss="modal"
+						aria-label="Close"
+				>
+                            <span
+		                            class="icon icon-close"
+		                            aria-hidden="true"
+                            ></span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p>
+					оставьте свои контактные данныеи наш менеджер
+					свяжется с вамидля уточнения деталей заказа
+				</p>
+				<form action="" class="modal-form">
+					<input
+							class="modal-form__input"
+							placeholder="Ваше имя"
+							type="text"
+					/>
+					<input
+							class="modal-form__input"
+							placeholder="Ваш телефон"
+							type="number"
+					/>
+				</form>
+				<button
+						type="button"
+						class="btn btn_orange"
+						data-dismiss="modal"
+				>
+					Заказать консультацию
+				</button>
+				<div class="feedback__form-item">
+					<input
+							type="checkbox"
+							id="personal-data-check-modal"
+							class="checkbox"
+					/>
+					<label
+							for="personal-data-check-modal"
+							class="feedback__label"
+					>
+						<div>
+							Я даю согласие на обработку моих
+							персональных данных в соответствии с
+							<a href="">политикой конфиденциальности</a>
+						</div>
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="main-wrapper">
 	<header class="header">
 		<div class="header-info container d-none d-lg-flex">
@@ -47,7 +116,6 @@
 							class="
                                     nav-list__item
                                     header-nav-list__item
-                                    header-nav-list__item--active
                                 "
 					>
 						<a class="nav__link" href="index.html"> Главная </a>
@@ -183,6 +251,8 @@
                                 "
 					>
 						<a class="request-link mr-md-5"
+						   data-toggle="modal"
+						   data-target="#requestCallModal"
 						>Заказать звонок</a
 						>
 						<div class="phone footer-phone my-3 my-md-0">

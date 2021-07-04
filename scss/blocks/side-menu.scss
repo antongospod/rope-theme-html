@@ -2,6 +2,9 @@
     ul {
         padding-inline-start: 0 !important;
     }
+	.roll-up,.expand {
+		cursor: pointer;
+	}
 }
 @media screen and (max-width: 991px) {
 	.side-menu {
@@ -24,7 +27,7 @@
 
 @media screen and (max-width: 991px) {
 	.side-menu__header h2 {
-		font-size: 16px;
+		font-size: 24px;
 		line-height: 120%;
 	}
 }
@@ -68,6 +71,10 @@
 	padding: 15px 24px;
 	text-align: left;
     cursor: pointer;
+
+	&:last-child {
+		border-bottom: none;
+	}
 }
 
 @media screen and (max-width: 991px) {

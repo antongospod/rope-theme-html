@@ -39,10 +39,21 @@ h2 {
         font-weight: 500;
         font-size: 28px;
         line-height: 120%;
+        margin:  0 0 10px;
     }
 }
 ul {
     padding-inline-start: 0;
+}
+.subheader {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 110%;
+
+    @include phone-only {
+        padding: 0 10px;
+    }
+
 }
 
 .main-wrapper {
@@ -134,7 +145,18 @@ ul {
     width: 9px;
     height: 9px;
 }
-
+.arrow-down {
+    transform: rotate(90deg);
+    width: 9px;
+    height: 13px;
+    margin: -1px 0 0 8px;
+}
+.arrow-up {
+    transform: rotate(270deg);
+    width: 9px;
+    height: 13px;
+    margin: 0 0 0 9px;
+}
 .carousel-indicators li:active {
     opacity: 0.9;
     transform: scale(0.55);
@@ -369,9 +391,13 @@ input {
     }
 }
 .request-link {
+    border: none;
+    background: none;
     border-bottom: 1px dashed $primary;
     cursor: pointer;
-
+    max-width: 122px;
+    text-align: center;
+    color: $primary;
     &:hover {
         border-bottom: 1px solid $primary;
     }

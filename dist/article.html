@@ -119,7 +119,6 @@
 							class="
                                     nav-list__item
                                     header-nav-list__item
-                                    header-nav-list__item--active
                                 "
 					>
 						<a class="nav__link" href="index.html"> Главная </a>
@@ -134,7 +133,7 @@
 							Контрактное производство
 						</a>
 					</li>
-					<li class="nav-list__item header-nav-list__item">
+					<li class="nav-list__item header-nav-list__item  header-nav-list__item--active">
 						<a class="nav__link" href="article.html"> Информация </a>
 					</li>
 					<li class="nav-list__item header-nav-list__item">
@@ -209,7 +208,7 @@
 		<section class="page-header">
 			<h1>Информация</h1>
 		</section>
-		<section class="news">
+		<section class="article-wrapper">
 			<div class="container">
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
@@ -230,7 +229,7 @@
 						<h2>
 							Оборудование для плетения стального троса
 						</h2>
-						<div class="article__image mb-4">
+						<div class="article__image article__image_main mb-4">
 							<img src="./img/article.png" alt=""/>
 						</div>
 						<div class="article__content">
@@ -325,9 +324,9 @@
 									др.) или из стальной проволоки.
 								</p>
 							</blockquote>
-							<div class="article__image_intext">
+							<div class=" article__image article__image_intext">
 								<img
-										src="./img/Dried-Aubergines-Slices 1.png"
+										src="./img/article-img.png"
 										class=""
 										alt=""
 								/>
@@ -393,14 +392,8 @@
 				<form action="" class="feedback-form">
 					<div
 							class="
-                                    d-flex
-                                    flex-column 
-                                    flex-md-row
-                                    justify-content-center
-                                    align-items-center
-                                    justify-content-md-between
-                                    align-items-md-end
-                                    my-4
+								feedback-form-inner
+
                                 "
 					>
 						<div class="form-item">
@@ -414,7 +407,7 @@
 									placeholder="Телефон"
 							/>
 						</div>
-						<button class="btn btn_orange mt-4 mt-md-0">
+						<button class="btn btn_orange">
 							Заказать звонок
 						</button>
 					</div>
@@ -463,7 +456,8 @@
                                     flex-md-row
                                 "
 					>
-						<a class="request-link mr-md-5"
+						<a class="request-link mr-md-5" data-toggle="modal"
+						   data-target="#requestCallModal"
 						>Заказать звонок</a
 						>
 						<div class="phone footer-phone my-3 my-md-0">

@@ -28,6 +28,75 @@
 	</head>
 </head>
 <body>
+<div
+		class="modal fade"
+		id="requestCallModal"
+		tabindex="-1"
+		role="dialog"
+		aria-labelledby="requestCallModal"
+		aria-hidden="true"
+>
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Заказать звонок</h5>
+				<button
+						type="button"
+						class="close"
+						data-dismiss="modal"
+						aria-label="Close"
+				>
+                            <span
+		                            class="icon icon-close"
+		                            aria-hidden="true"
+                            ></span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p>
+					оставьте свои контактные данныеи наш менеджер
+					свяжется с вамидля уточнения деталей заказа
+				</p>
+				<form action="" class="modal-form">
+					<input
+							class="modal-form__input"
+							placeholder="Ваше имя"
+							type="text"
+					/>
+					<input
+							class="modal-form__input"
+							placeholder="Ваш телефон"
+							type="number"
+					/>
+				</form>
+				<button
+						type="button"
+						class="btn btn_orange"
+						data-dismiss="modal"
+				>
+					Заказать консультацию
+				</button>
+				<div class="feedback__form-item">
+					<input
+							type="checkbox"
+							id="personal-data-check-modal"
+							class="checkbox"
+					/>
+					<label
+							for="personal-data-check-modal"
+							class="feedback__label"
+					>
+						<div>
+							Я даю согласие на обработку моих
+							персональных данных в соответствии с
+							<a href="">политикой конфиденциальности</a>
+						</div>
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="main-wrapper">
 	<header class="header">
 		<div class="header-info container d-none d-lg-flex">
@@ -64,12 +133,12 @@
 							class="
                                     nav-list__item
                                     header-nav-list__item
-                                    header-nav-list__item--active
+
                                 "
 					>
 						<a class="nav__link" href="index.html"> Главная </a>
 					</li>
-					<li class="nav-list__item header-nav-list__item">
+					<li class="nav-list__item header-nav-list__item  header-nav-list__item--active">
 						<a class="nav__link" href="catalog.html">
 							Продукция
 						</a>
@@ -124,7 +193,7 @@
 					<li class="mobile-menu__list_item">
 						<a href="index.html">Главная</a>
 					</li>
-					<li class="mobile-menu__list_item">
+					<li class="mobile-menu__list_item mobile-menu__list_item--active">
 						<a href="catalog.html">Продукция</a>
 					</li>
 					<li class="mobile-menu__list_item">
@@ -135,7 +204,7 @@
 					<li
 							class="
                                     mobile-menu__list_item
-                                    mobile-menu__list_item--active
+
                                 "
 					>
 						<a href="news.html">Информация</a>
@@ -193,18 +262,22 @@
                                                     control-btn--active
                                                 "
 									>
-										<span>expand</span>
-										<img
-												class="arrow-down"
-												src="./img/icons/arrow-right.svg"
-												alt=""
-										/>
-										<span>roll up</span>
-										<img
-												class="arrow-up"
-												src="./img/icons/arrow-right.svg"
-												alt=""
-										/>
+										<div class="expand" style="display: block">
+											<span>Развернуть</span>
+											<img
+													class="arrow-down"
+													src="./img/icons/arrow-right.svg"
+													alt=""
+											/>
+										</div>
+										<div class="roll-up" style="display: none">
+											<span>Свернуть</span>
+											<img
+													class="arrow-up"
+													src="./img/icons/arrow-right.svg"
+													alt=""
+											/>
+										</div>
 									</div>
 								</div>
 
@@ -258,106 +331,62 @@
                                         "
 							>
 								<div class="card catalog-item-card">
-									<div class="card-header d-flex">
-										<div
-												class="
-                                                        catalog-item-card__image
-                                                    "
-										>
-											<div
-													class="carousel-wrapper"
-											>
-												<div
-														id="carouselExampleIndicators"
-														class="
-                                                                carousel
-                                                                slide
-                                                            "
-														data-ride="carousel"
-														data-interval="false"
-												>
-													<ol
-															class="
-                                                                    carousel-indicators
-                                                                "
-													>
-														<li
-																data-target="#carouselExampleIndicators"
-																data-slide-to="0"
-																class="
-                                                                        active
-                                                                    "
-														></li>
-														<li
-																data-target="#carouselExampleIndicators"
-																data-slide-to="1"
-														></li>
-														<li
-																data-target="#carouselExampleIndicators"
-																data-slide-to="2"
-														></li>
-													</ol>
-													<div
-															class="
-                                                                    carousel-inner
-                                                                "
-													>
-														<div
-																class="
-                                                                        carousel-item
-                                                                        active
-                                                                    "
-														>
-															<img
-																	class="
-                                                                            d-block
-                                                                            w-100
-                                                                        "
-																	src="./img/Dried-Aubergines-Slices 1.png"
-																	alt="First slide"
-															/>
-														</div>
-														<div
-																class="
-                                                                        carousel-item
-                                                                    "
-														>
-															<img
-																	class="
-                                                                            d-block
-                                                                            w-100
-                                                                        "
-																	src="./img/Dried-Aubergines-Slices 1.png"
-																	alt="Second slide"
-															/>
-														</div>
-														<div
-																class="
-                                                                        carousel-item
-                                                                    "
-														>
-															<img
-																	class="
-                                                                            d-block
-                                                                            w-100
-                                                                        "
-																	src="./img/Dried-Aubergines-Slices 1.png"
-																	alt="Third slide"
-															/>
+									<div class="card-header d-flex flex-column flex-md-row">
+										<div class="catalog-item-card__image">
+											<div id="product-img-slider" class="carousel slide"
+											     data-ride="carousel">
+
+												<svg class="indicators-bg"
+												     fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path opacity="0.4"
+													      d="M0 0H75.6773C80.0371 0 83.8945 2.82465 85.2107 6.98108L92.5 30H0V0Z"
+													      fill="#3B3D3E"/>
+												</svg>
+
+												<ol class="carousel-indicators">
+													<li data-target="#product-img-slider" data-slide-to="0"
+													    class="active"></li>
+													<li data-target="#product-img-slider" data-slide-to="1"></li>
+													<li data-target="#product-img-slider" data-slide-to="2"></li>
+												</ol>
+
+
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<div class="item-img">
+															<div class="item-img__wrapper">
+																<img src="./img/Dried-Aubergines-Slices 1.png"
+																     alt="First slide"
+																/>
+															</div>
 														</div>
 													</div>
+													<div class="carousel-item">
+														<div class="item-img">
+															<div class="item-img__wrapper">
+																<img src="./img/Dried-Aubergines-Slices 1.png"
+																     alt="First slide"
+																/>
+															</div>
+														</div>
+													</div>
+													<div class="carousel-item">
+														<div class="item-img">
+															<div class="item-img__wrapper">
+																<img src="./img/Dried-Aubergines-Slices 1.png"
+																     alt="First slide"
+																/>
+															</div>
+														</div>
+													</div>
+
 												</div>
 											</div>
 										</div>
-										<div
-												class="
-                                                        catalog-item-card__count
-                                                    "
+										<div class="catalog-item-card__count"
 										>
 											<h3>Ремень багажный</h3>
-											<div
-													class="counter-wrapper"
-											>
+											<div class="counter-wrapper">
 												<span>Количество</span>
 												<div class="counter">
 													<button
@@ -625,14 +654,8 @@
 					<form action="" class="feedback-form">
 						<div
 								class="
-                                    d-flex
-                                    flex-column
-                                    flex-md-row
-                                    justify-content-center
-                                    align-items-center
-                                    justify-content-md-between
-                                    align-items-md-end
-                                    my-4
+								feedback-form-inner
+
                                 "
 						>
 							<div class="form-item">
@@ -646,7 +669,7 @@
 										placeholder="Телефон"
 								/>
 							</div>
-							<button class="btn btn_orange mt-4 mt-md-0">
+							<button class="btn btn_orange">
 								Заказать звонок
 							</button>
 						</div>
@@ -697,6 +720,8 @@
                                 "
 					>
 						<a class="request-link mr-md-5"
+						   data-toggle="modal"
+						   data-target="#requestCallModal"
 						>Заказать звонок</a
 						>
 						<div class="phone footer-phone my-3 my-md-0">
