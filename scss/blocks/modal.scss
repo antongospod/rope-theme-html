@@ -4,6 +4,10 @@
 }
 .modal-dialog {
     max-width: 300px;
+
+    @include phone-only {
+        max-width: 100%;
+    }
 }
 .modal-content .modal-header {
     border-bottom: none;
