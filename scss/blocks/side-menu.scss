@@ -29,6 +29,7 @@
 	.side-menu__header h2 {
 		font-size: 24px;
 		line-height: 120%;
+		margin: 0;
 	}
 }
 
@@ -43,13 +44,18 @@
 
 .side-menu__list {
 	margin: 20px 0;
-}
 
-@media screen and (max-width: 991px) {
-	.side-menu__list {
+	@media screen and (max-width: 991px) {
 		display: none;
 	}
+	&--open {
+		@media screen and (max-width: 991px) {
+			display: block;
+		}
+	}
 }
+
+
 
 .side-menu__list.active {
 	display: flex;

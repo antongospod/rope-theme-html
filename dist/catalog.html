@@ -267,38 +267,47 @@
 									</div>
 								</div>
 
-								<ul class="side-menu__list">
-									<li
+								<ul class="side-menu__list js-catalog-nav-list" data-category="all">
+									<li     data-category="all"
 											class="
                                                     side-menu__item
-                                                    side-menu__item--active
+                                                   js-catalog-nav-list-item
+                                                   side-menu__item--active
                                                 "
 									>
-										All
+										Все
 									</li>
-									<li class="side-menu__item active" data-category="towing-ropes">
+									<li class="side-menu__item js-catalog-nav-list-item"
+									    data-category="towing-ropes">
 										Тросы буксировочные
 									</li>
-									<li class="side-menu__item">
+									<li class="side-menu__item js-catalog-nav-list-item"
+									    data-category="dynamic-cables">
 										Тросы динамические, рывковые
 									</li>
-									<li class="side-menu__item">
+									<li class="side-menu__item js-catalog-nav-list-item"
+									    data-category="load-securing-belts">
 										Ремни крепления груза, стяжные
 										ремни
 									</li>
-									<li class="side-menu__item">
+									<li class="side-menu__item js-catalog-nav-list-item"
+									    data-category="luggage-belts">
 										Ремни багажные
 									</li>
-									<li class="side-menu__item" data-category="pull-hooks">
+									<li class="side-menu__item js-catalog-nav-list-item"
+									    data-category="pull-hooks">
 										Крюк чалочный
 									</li>
-									<li class="side-menu__item">
+									<li class="side-menu__item js-catalog-nav-list-item"
+									    data-category="сlamping-mechanism">
 										Стяжной механизм
 									</li>
-									<li class="side-menu__item">
+									<li class="side-menu__item js-catalog-nav-list-item"
+									    data-category="perforated-fastener">
 										Крепеж перфорированный
 									</li>
-									<li class="side-menu__item">
+									<li class="side-menu__item js-catalog-nav-list-item"
+									    data-category="garage-hinge-with-ball">
 										Петля гаражная с шаром
 									</li>
 								</ul>
@@ -307,8 +316,8 @@
 						<div class="end">
 							<h3 class="current-category"></h3>
 							<div class="d-flex flex-column w-100 h-100  align-items-center justify-content-between">
-								<div class="catalog-list" id="js-catalog-list">
-									<div class="catalog-list-item" data-category="towing-ropes">
+								<div class="catalog-list js-catalog-list">
+									<div class="catalog-list-item js-catalog-list-item" data-category="towing-ropes">
 										<div class="card catalog-card">
 											<div class="card-header">
 												<img
@@ -334,7 +343,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="catalog-list-item" data-category="pull-hooks">
+									<div class="catalog-list-item js-catalog-list-item" data-category="pull-hooks">
 										<div class="card catalog-card">
 											<div class="card-header">
 												<img
@@ -370,7 +379,7 @@
 											<a
 													class="page-link"
 													href="#"
-											>Previous</a
+											>Первая</a
 											>
 										</li>
 										<li class="page-item">
@@ -398,7 +407,7 @@
 											<a
 													class="page-link"
 													href="#"
-											>Next</a
+											>Последняя</a
 											>
 										</li>
 									</ul>
@@ -569,5 +578,7 @@
 	</footer>
 </div>
 <script src="./js/app.js"></script>
+<script src="./js/myLib.js"></script>
+<script src="js/catalog-filter.js"></script>
 </body>
 </html>

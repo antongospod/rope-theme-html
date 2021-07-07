@@ -42,13 +42,18 @@
         border-bottom: 1px solid #e0e6ee;
         border-top: 1px solid #e0e6ee;
 
-        @include phone-only {
+        @media screen and (max-width: 1140px){
             height: auto;
         }
 
         &-list {
             width: 100%;
             justify-content: flex-start;
+
+            @media screen and (max-width: 1140px){
+                height: auto;
+                flex-wrap: wrap;
+            }
 
             @include phone-only {
                 flex-direction: column;
@@ -61,6 +66,11 @@
                 text-align: left;
                 margin-right: 90px;
                 justify-content: left;
+
+                @media screen and (max-width: 1140px){
+                    height: auto;
+                    min-height: 40px;
+                }
 
                 @include phone-only {
                    justify-content: center;

@@ -6,20 +6,22 @@ function mobileMenu(node, menu, wrapper) {
     });
 }
 
-// function indicatorsLength() {
-// 	let parents = document.querySelectorAll(".carousel-indicators");
-// 	parents.forEach((e) => {
-// 		let width = 25 * e.childElementCount;
-// 		e.style.width = `${width}px`;
-// 	});
-// }
+function indicatorsLength() {
+	let parents = document.querySelectorAll(".carousel-indicators");
+	if(parents) {
+        parents.forEach((e) => {
+            let width = 25 * e.childElementCount;
+            e.style.width = `${width}px`;
+        });
+    }
+}
 
 mobileMenu(
     document.querySelector(".burger-btn"),
     document.querySelector(".mobile-menu__body"),
     document.querySelector(".burger-btn")
 );
-// indicatorsLength();
+indicatorsLength();
 window.addEventListener(
     "resize",
     function () {
@@ -36,29 +38,6 @@ window.addEventListener(
     },
     false
 );
-// function openFullImage(node) {
-// 	let mainImageContainer = node;
-// 	let previewItems =
-// 		mainImageContainer.querySelectorAll(".modal-image__item");
-
-// 	let mainImage = document.querySelector("#modal-image");
-// 	previewItems.forEach((e) => {
-// 		e.addEventListener("click", function (event) {
-// 			mainImage.innerHTML = "";
-// 			let item = event.target;
-// 			if (item.classList.contains("modal-image__item")) {
-// 				let currentImageSrc = item.getAttribute("src");
-// 				let id = item.dataset.id;
-// 				let img = document.createElement("img");
-// 				img.setAttribute("src", currentImageSrc);
-// 				mainImage.appendChild(img);
-// 			}
-// 		});
-// 	});
-// }
-
-// openFullImage(document.querySelector("#licences-wrapper-desctop"));
-// openFullImage(document.querySelector("#licences-wrapper-mobile"));
 
 function counter(type) {
     const counter = document.querySelector("#catalog-item-counter");
@@ -101,19 +80,17 @@ if(catalogCounter){
     counterValidation(catalogCounter);
 }
 
-
-
-function openSideMenuMobile(node) {
+function toggleSideMenuMobile(node) {
     let expandBtn = document.querySelector('.expand');
     let roleUpBtn = document.querySelector('.roll-up');
     let menu = document.querySelector('.side-menu__list');
     node.addEventListener('click', () => {
-        if (menu.style.display === 'none') {
-            menu.style.display = 'block';
+        if (menu.classList.contains('side-menu__list--open')) {
+            menu.classList.remove('side-menu__list--open')
             expandBtn.style.display = 'none';
             roleUpBtn.style.display = 'block';
         } else {
-            menu.style.display = 'none';
+            menu.classList.add('side-menu__list--open')
             expandBtn.style.display = 'block';
             roleUpBtn.style.display = 'none';
         }
@@ -122,7 +99,7 @@ function openSideMenuMobile(node) {
 };
 let sideMenuToggle = document.querySelector('.control-btn');
 if(sideMenuToggle){
-    openSideMenuMobile(sideMenuToggle)
+    toggleSideMenuMobile(sideMenuToggle)
 }
 
 
