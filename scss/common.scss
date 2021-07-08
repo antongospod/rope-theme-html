@@ -55,8 +55,13 @@ img {
     width: 100%;
     height: auto;
 }
-ul {
+ul,ol {
     padding-inline-start: 0;
+}
+table {
+    td, tr {
+        border: none;
+    }
 }
 .subheader {
     font-weight: 300;
@@ -99,6 +104,7 @@ ul {
     border-radius: 50px;
     color: white;
     padding: 7px;
+    font-family: PFDinTextPro-Medium;
 }
 
 .btn:active {
@@ -448,6 +454,8 @@ input {
 }
 .breadcrumb {
     background-color: initial;
+    cursor: pointer;
+    padding: 0.75em 0;
 }
 
 .breadcrumb-item::before {
@@ -459,13 +467,21 @@ input {
 }
 
 .breadcrumb-item + .active {
-    text-decoration-line: underline;
     color: $primary;
+    &:hover {
+        text-decoration-line: underline;
+        color: #F9BC02;
+    }
 }
 
 .breadcrumb-item a {
     color: rgba(112, 112, 112, 0.69);
     text-decoration: none;
+
+    &:hover {
+        text-decoration-line: underline;
+        color: #F9BC02;
+    }
 }
 
 .breadcrumb-item img {

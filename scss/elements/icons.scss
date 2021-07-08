@@ -1,51 +1,76 @@
 .icon {
-    width: 20px;
-    height: 20px;
-    display: block;
-    background-size: contain !important;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-size: contain !important;
 
-    &-address {
-        background: url("../img/icons/map-gradient.svg") no-repeat center center;
-    }
-    &-address_flat {
-        background: url("../img/icons/map.svg") no-repeat center center;
-    }
-    &-phone-circle {
-        background: url("../img/icons/phone-circle.svg") no-repeat center center;
-    }
-    &-arrow-right {
-        width: 8px;
-        height: 10px;
-        mask: url("../img/icons/arrow-right.svg");
-        mask-repeat: no-repeat;
-        background-color: initial;
-    }
-    &-telegram-grey {
-        background: url("../img/icons/telegram.svg") no-repeat center center;
-    }
-    &-vk-grey {
-        background: url("../img/icons/vk.svg") no-repeat center center;
-    }
-    &-instagram {
-        background: url("../img/icons/instagram.svg") no-repeat center center;
-    }
-    &-facebook-grey {
-        background: url("../img/icons/facebook.svg") no-repeat center center;
-    }
-    &-close {
-        width: 16px;
-        height: 16px;
-        background: url("../img/icons/close.svg") no-repeat center center;
-    }
-    &-flag {
-        width: 22px;
-        height: 17px;
+  &-address {
+    background: url("../img/icons/map-gradient.svg") no-repeat center center;
+  }
 
-        &_rus {
-            background: url("../img/icons/rus.svg") no-repeat center center;
-        }
-        &_eng {
-            background: url("../img/icons/Eng.svg") no-repeat center center;
-        }
+  &-address_flat {
+    background: url("../img/icons/map.svg") no-repeat center center;
+  }
+
+  &-phone-circle {
+    background: url("../img/icons/phone-circle.svg") no-repeat center center;
+  }
+
+  &-arrow-right {
+    width: 8px;
+    height: 10px;
+    mask: url("../img/icons/arrow-right.svg");
+    mask-repeat: no-repeat;
+    background-color: initial;
+  }
+
+  &-telegram-grey {
+    mask: url("../img/icons/telegram.svg") no-repeat center center;
+    background: #828282;
+
+    &:hover {
+      background: #E2A03B;
     }
+  }
+
+  &-vk-grey {
+    mask: url("../img/icons/vk.svg") no-repeat center center;
+    background: #828282;
+
+    &:hover {
+      background: #E2A03B;
+    }
+  }
+
+  &-instagram {
+    background: url("../img/icons/instagram.svg") no-repeat center center;
+  }
+
+  &-facebook-grey {
+    mask: url("../img/icons/facebook.svg") no-repeat center center;
+    background: #828282;
+
+    &:hover {
+      background: #E2A03B;
+    }
+  }
+
+  &-close {
+    width: 16px;
+    height: 16px;
+    background: url("../img/icons/close.svg") no-repeat center center;
+  }
+
+  &-flag {
+    width: 22px;
+    height: 17px;
+
+    &_rus {
+      background: url("../img/icons/rus.svg") no-repeat center center;
+    }
+
+    &_eng {
+      background: url("../img/icons/Eng.svg") no-repeat center center;
+    }
+  }
 }

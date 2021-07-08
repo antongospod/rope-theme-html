@@ -124,10 +124,10 @@
 
   .benefits {
     background: #f8f9fb;
-    padding: 83px 0 121px;
+    padding: 83px 0 100px;
 
     @media screen and (max-width: 520px) {
-      padding: 40px 0 47px;
+      padding: 40px 0 10px;
     }
 
     &-wrapper {
@@ -144,10 +144,15 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      margin: 30px 10px;
+      margin: 0 10px;
+
+      @media screen and (max-width: 1197px) {
+        margin: 10px;
+      }
 
       @media screen and (max-width: 520px) {
         width: 130px;
+        height: 196px;
         margin: 10px 5px;
       }
       &__icon {
@@ -172,6 +177,7 @@
         @media screen and (max-width: 520px) {
           font-size: 16px;
           line-height: 140%;
+          margin: 7px 0 0;
         }
       }
     }

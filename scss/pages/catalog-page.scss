@@ -362,7 +362,11 @@
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
-      background: #eceef4 url("../img/icons/arrow-right.svg") center no-repeat;
+      background: #eceef4 url("../img/icons/arrow-right.svg") 54% no-repeat;
+
+      &:hover {
+        background: #E2A03B  url("../img/icons/arrow-right-white.svg") 54% no-repeat;
+      }
     }
 
     .prev {
