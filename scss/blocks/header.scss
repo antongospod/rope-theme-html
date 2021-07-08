@@ -57,4 +57,47 @@
             }
         }
     }
+
+
+    &-lang {
+        width: 94px;
+        height: 18px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 120%;
+        color: #3B3D3E;
+
+        @media screen and (max-width: 991px){
+            margin: 0 68px 0 15px;
+        }
+
+        &__dropdown {
+            border: none;
+            background: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+        }
+        .dropdown-menu{
+            min-width: 93px;
+        }
+        .dropdown-select-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        .select-item {
+            background: none;
+            border: none;
+            width: 100%;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            padding: 5px 18px;
+            justify-content: space-between;
+        }
+    }
 }

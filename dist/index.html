@@ -90,7 +90,7 @@
 	<header class="header">
 		<div class="header-info container d-none d-lg-flex">
 			<div class="logo header-logo">
-				<img src="./img/logo-header.svg" alt="logo"/>
+				<img src="./img/LOGO_RUS.svg" alt="logo"/>
 			</div>
 			<div class="address header-address">
                         <span class="icon icon-address"></span
@@ -113,7 +113,24 @@
 				Заказать звонок
 			</button>
 
-			<div class="lang header-lang">RUS</div>
+			<div class="lang header-lang">
+				<div class="dropdown">
+					<button class="header-lang__dropdown dropdown-toggle" type="button" id="dropdownMenuButton"
+					        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class='icon icon-flag_rus'></span><span>RUS</span>
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<div class="dropdown-select-wrapper">
+							<button class="select-item" type="button">
+								<span class="icon icon-flag_rus"></span><span>RUS</span>
+							</button>
+							<button class="select-item" type="button">
+								<span class="icon icon-flag_eng"></span><span>ENG</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="nav header-nav d-none d-lg-flex">
 			<nav class="container">
@@ -153,9 +170,27 @@
 			<div class="mobile-menu__header">
 				<img
 						class="mobile-menu__logo"
-						src="./img/logo-header.svg"
+						src="./img/LOGO_RUS.svg"
 						alt="logo"
 				/>
+				<div class="lang header-lang d-none">
+					<div class="dropdown">
+						<button class="header-lang__dropdown dropdown-toggle" type="button" id="dropdownMenuButtonMobile"
+						        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class='icon icon-flag_rus'></span><span>RUS</span>
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButtonMobile">
+							<div class="dropdown-select-wrapper">
+								<button class="select-item" type="button">
+									<span class="icon icon-flag_rus"></span><span>RUS</span>
+								</button>
+								<button class="select-item" type="button">
+									<span class="icon icon-flag_eng"></span><span>ENG</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="burger-btn">
 					<span></span>
 				</div>
@@ -222,8 +257,8 @@
                                     (Азии)</span
 
 						><a href="catalog.html" class="btn btn_orange">
-							Посмотреть каталог
-						</a>
+						Посмотреть каталог
+					</a>
 					</div>
 					<div class="hero-img"></div>
 				</div>
@@ -246,7 +281,7 @@
 										Тросы буксировочные
 									</span>
 									<a href="catalog-item.html"
-											class="btn btn_outline-orange"
+									   class="btn btn_outline-orange"
 									>
 										Подробнее
 									</a>
@@ -267,7 +302,7 @@
 										Тросы буксировочные
 									</span>
 									<a href="catalog-item.html"
-											class="btn btn_outline-orange"
+									   class="btn btn_outline-orange"
 									>
 										Подробнее
 									</a>
@@ -288,7 +323,7 @@
 										Тросы буксировочные
 									</span>
 									<a href="catalog-item.html"
-											class="btn btn_outline-orange"
+									   class="btn btn_outline-orange"
 									>
 										Подробнее
 									</a>
@@ -309,7 +344,7 @@
 										Тросы буксировочные
 									</span>
 									<a href="catalog-item.html"
-											class="btn btn_outline-orange"
+									   class="btn btn_outline-orange"
 									>
 										Подробнее
 									</a>
@@ -476,15 +511,14 @@
 										type="checkbox"
 										id="personal-data-check"
 										class="checkbox"
+										checked
 								/>
 								<label
 										for="personal-data-check"
 										class="label agreement__label"
 								>
 									<div>
-										Я даю согласие на обработку моих
-										персональных данных в соответствии с
-										<a href="">политикой конфиденциальности</a>
+										Даю согласие на обработку моих персональных данных
 									</div>
 								</label
 								>

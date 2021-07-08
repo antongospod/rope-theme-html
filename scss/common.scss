@@ -3,15 +3,22 @@
    ========================================================================== */
 
 @font-face {
-    font-family: "PFDinTextPro-Regular";
+    font-family: PFDinTextPro-Regular;
     font-style: normal;
     font-weight: normal;
     src: local("PFDinTextPro-Regular"),
-        url("./PFDinTextPro-Regular.woff") format("woff");
+    url("./PFDinTextPro-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: PFDinTextPro-Medium;
+    font-style: normal;
+    font-weight: normal;
+    src: local("pfdintextpro-medium"),
+    url("./pfdintextpro-medium.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "PFDinTextPro-Bold";
+    font-family: PFDinTextPro-Bold;
     font-style: normal;
     font-weight: normal;
     src: local("PFDinTextPro-Bold"),
@@ -30,6 +37,7 @@ h2 {
     line-height: 100%;
     color: #3b3d3e;
     letter-spacing: 1.1px;
+    font-family: PFDinTextPro-Medium;
 }
 h2 {
     margin: 0 0 41px;
@@ -368,7 +376,6 @@ input {
 @media screen and (max-width: 991px) {
     .checkbox + label::before {
         position: relative;
-        top: -6px;
     }
 }
 
@@ -404,7 +411,7 @@ input {
     text-align: center;
     color: $primary;
     &:hover {
-        border-bottom: 1px solid $primary;
+        border-bottom: 1px solid #f9bc02;;
     }
 }
 .container {

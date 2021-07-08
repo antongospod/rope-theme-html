@@ -5,6 +5,9 @@
     background-size: contain !important;
 
     &-address {
+        background: url("../img/icons/map-gradient.svg") no-repeat center center;
+    }
+    &-address_flat {
         background: url("../img/icons/map.svg") no-repeat center center;
     }
     &-phone-circle {
@@ -33,5 +36,16 @@
         width: 16px;
         height: 16px;
         background: url("../img/icons/close.svg") no-repeat center center;
+    }
+    &-flag {
+        width: 22px;
+        height: 17px;
+
+        &_rus {
+            background: url("../img/icons/rus.svg") no-repeat center center;
+        }
+        &_eng {
+            background: url("../img/icons/Eng.svg") no-repeat center center;
+        }
     }
 }

@@ -1,69 +1,84 @@
 .feedback {
-    max-width: 1920px;
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 536px;
+  background: url("../img/feedback-bg.png") 60% 0 no-repeat;
+  background-size: 101%;
+  @media screen and (max-width: 880px) {
+    background-size: inherit;
+  }
+
+  @include phone-only {
+    height: auto;
+  }
+
+  h2,
+  h3 {
+    color: #fff;
+  }
+
+  &-wrapper {
+    max-width: 880px;
     width: 100%;
+    text-align: center;
+    padding: 70px 0;
+  }
+
+  &-form {
+    margin-top: 50px;
+
+    .btn {
+      width: 280px;
+      height: 50px;
+      margin: 10px 0;
+    }
+
+    &-inner {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      @media screen and (max-width: 880px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+      }
+    }
+  }
+
+  .form-item {
+    width: 280px;
+    padding: 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 536px;
-    background: url("../img/feedback-bg.png") 60% 0 no-repeat;
+  }
 
-    @include phone-only{
-        height: auto;
+  .agreement {
+    width: 520px;
 
-    }
+    @include phone-only {
+      width: 260px;
+      text-align: left;
+      padding: 0 36px;
 
-    h2,
-    h3 {
-        color: #fff;
+      .checkbox + label:before {
+        position: relative;
+        top: -5px;
+      }
     }
+  }
 
-    &-wrapper {
-        max-width: 880px;
-        width: 100%;
-        text-align: center;
-        padding: 70px 0;
-    }
-    &-form {
-        .btn {
-            width: 280px;
-            height: 50px;
-            margin: 10px 0;
-        }
-        &-inner {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-end;
-
-            @media screen  and (max-width: 880px){
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin: 40px;
-            }
-        }
-    }
-    .form-item {
-        width: 280px;
-        padding: 10px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .agreement {
-        width: 520px;
-
-        @include phone-only {
-            width: 260px;
-            text-align: left;
-
-            .checkbox + label:before {
-                position: relative;
-                top: -14px;
-            }
-        }
-    }
-    .subheader {
-        margin-top: 10px;
-    }
+  .subheader {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 110%;
+  }
 }

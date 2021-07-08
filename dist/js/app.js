@@ -1,7 +1,11 @@
-function mobileMenu(node, menu, wrapper) {
-    wrapper.addEventListener("click", () => {
+function toggleMobileMenu(node, menu, wrapper) {
+    node.addEventListener("click", () => {
         node.classList.toggle(`${node.classList[0]}--active`);
         menu.classList.toggle("active");
+       let lang =  wrapper.querySelector('.lang');
+       if(lang){
+           lang.classList.toggle('d-none')
+       }
         document.querySelector("body").classList.toggle("lock");
     });
 }
@@ -16,10 +20,10 @@ function indicatorsLength() {
     }
 }
 
-mobileMenu(
+toggleMobileMenu(
     document.querySelector(".burger-btn"),
     document.querySelector(".mobile-menu__body"),
-    document.querySelector(".burger-btn")
+    document.querySelector(".mobile-menu")
 );
 indicatorsLength();
 window.addEventListener(
