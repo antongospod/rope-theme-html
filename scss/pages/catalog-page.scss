@@ -3,6 +3,10 @@
   margin: 0 auto;
   background: url("../img/трос-3.png") 0 25% /500px 830px no-repeat,
   url("../img/трос-4.png") 100% 30% no-repeat;
+
+  @media screen and (max-width : 520px) {
+    background: none;
+  }
 }
 
 .catalog {

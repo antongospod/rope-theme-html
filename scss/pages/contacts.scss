@@ -5,7 +5,14 @@
     justify-content: center;
 
     .icon {
-        margin: 5px 5px 0 0;
+        margin: 7px 20px 0 0;
+    }
+
+    .map__wrapper {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 640px;
     }
 }
 
@@ -84,3 +91,5 @@
 .contacts__card .location {
     padding: 20px 0;
 }
+
+

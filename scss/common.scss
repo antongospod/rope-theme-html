@@ -85,7 +85,9 @@ table {
     @include phone-only {
         padding: 0 10px;
     }
-
+}
+.color-black {
+    color:  #000000 !important;
 }
 
 .main-wrapper {
@@ -542,10 +544,12 @@ input {
     background-image: url("../img/bg-title.png");
     background-position: top;
     background-repeat: no-repeat;
-    padding: 60px;
+    height: 176px;
+
 
     @media screen and (max-width: 991px) {
-        padding: 30px 10px;
+        height: 90px;
+        background-size: cover;
     }
 }
 
