@@ -4,6 +4,20 @@
   display: block;
   background-size: contain !important;
 
+  &-calendar {
+    mask: url("../img/icons/calendar.svg") no-repeat center center;
+    background: $font-grey;
+  }
+  
+  &-view {
+    mask: url("../img/icons/eye.svg") no-repeat center center;
+    background: $font-grey;
+  }
+  &-tag {
+    mask: url("../img/icons/tag.svg") no-repeat center center;
+    background: $font-grey;
+  }
+
   &-address {
     background: url("../img/icons/map-gradient.svg") no-repeat center center;
   }
