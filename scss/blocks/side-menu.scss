@@ -18,12 +18,11 @@
 }
 
 .side-menu__header {
-	height: 50px;
+    height: 50px;
 
-
-	@media screen and (max-width: 991px) {
-		height: auto;
-	}
+    @media screen and (max-width: 991px) {
+        height: auto;
+    }
 
     h2 {
         font-style: normal;
@@ -54,11 +53,22 @@
     margin: 20px 0;
 
     @media screen and (max-width: 991px) {
-        display: none;
+        height: auto;
+        max-height: 0;
+        visibility: hidden;
+        opacity: 0;
+        margin: 0;
+        pointer-events: none;
+        transition: all 0.5s ease-in-out;
     }
     &--open {
         @media screen and (max-width: 991px) {
-            display: block;
+            max-height: 5000px;
+            visibility: visible;
+            opacity: 1;
+            margin: 20px 0;
+            pointer-events: visible;
+            transition: all 0.5s ease-in-out;
         }
     }
 }

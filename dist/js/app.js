@@ -2,17 +2,17 @@ function toggleMobileMenu(node, menu, wrapper) {
     node.addEventListener("click", () => {
         node.classList.toggle(`${node.classList[0]}--active`);
         menu.classList.toggle("active");
-       let lang =  wrapper.querySelector('.lang');
-       if(lang){
-           lang.classList.toggle('d-none')
-       }
+        let lang = wrapper.querySelector(".lang");
+        if (lang) {
+            lang.classList.toggle("d-none");
+        }
         document.querySelector("body").classList.toggle("lock");
     });
 }
 
 function indicatorsLength() {
-	let parents = document.querySelectorAll(".carousel-indicators");
-	if(parents) {
+    let parents = document.querySelectorAll(".carousel-indicators");
+    if (parents) {
         parents.forEach((e) => {
             let width = 25 * e.childElementCount;
             e.style.width = `${width}px`;
@@ -61,7 +61,7 @@ function counterValidation(node) {
     node.addEventListener("keypress", (e) => {
         let clearText = e.target.value.replace(/\./g, "").replace(/\,/g, "");
 
-        if (!regexp.test(clearText) && clearText != '') {
+        if (!regexp.test(clearText) && clearText != "") {
             e.preventDefault();
         } else {
             e.target.value = clearText;
@@ -72,7 +72,7 @@ function counterValidation(node) {
 let plus = document.querySelector(".plus");
 let minus = document.querySelector(".minus");
 
-if(plus && minus){
+if (plus && minus) {
     plus.addEventListener("click", () => {
         counter("plus");
     });
@@ -81,31 +81,27 @@ if(plus && minus){
     });
 }
 let catalogCounter = document.querySelector("#catalog-item-counter");
-if(catalogCounter){
+if (catalogCounter) {
     counterValidation(catalogCounter);
 }
 
 function toggleSideMenuMobile(node) {
-    let expandBtn = document.querySelector('.expand');
-    let roleUpBtn = document.querySelector('.roll-up');
-    let menu = document.querySelector('.side-menu__list');
-    node.addEventListener('click', () => {
-        if (menu.classList.contains('side-menu__list--open')) {
-            menu.classList.remove('side-menu__list--open')
-            expandBtn.style.display = 'none';
-            roleUpBtn.style.display = 'block';
+    let expandBtn = document.querySelector(".expand");
+    let roleUpBtn = document.querySelector(".roll-up");
+    let menu = document.querySelector(".side-menu__list");
+    node.addEventListener("click", () => {
+        if (menu.classList.contains("side-menu__list--open")) {
+            menu.classList.remove("side-menu__list--open");
+            expandBtn.style.display = "none";
+            roleUpBtn.style.display = "block";
         } else {
-            menu.classList.add('side-menu__list--open')
-            expandBtn.style.display = 'block';
-            roleUpBtn.style.display = 'none';
+            menu.classList.add("side-menu__list--open");
+            expandBtn.style.display = "block";
+            roleUpBtn.style.display = "none";
         }
-    })
-
-};
-let sideMenuToggle = document.querySelector('.control-btn');
-if(sideMenuToggle){
-    toggleSideMenuMobile(sideMenuToggle)
+    });
 }
-
-
-
+let sideMenuToggle = document.querySelector(".control-btn");
+if (sideMenuToggle) {
+    toggleSideMenuMobile(sideMenuToggle);
+}

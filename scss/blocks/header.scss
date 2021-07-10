@@ -63,12 +63,20 @@
 
     &-lang {
         width: 94px;
-        height: 18px;
+        height: 100%;
         font-style: normal;
         font-weight: 300;
         font-size: 20px;
-        line-height: 120%;
+        line-height: 100%;
         color: #3B3D3E;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+            margin-right: 5px;
+        }
 
         @media screen and (max-width: 991px){
             margin: 0 68px 0 15px;
