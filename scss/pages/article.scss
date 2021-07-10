@@ -93,7 +93,7 @@
     }
   }
 
-  span {
+  span:not(.social__text) {
     font-style: normal;
     font-weight: 600;
     font-size: 20px;

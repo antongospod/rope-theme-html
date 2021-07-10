@@ -87,7 +87,7 @@
 	<header class="header">
 		<div class="header-info container d-none d-lg-flex">
 			<div class="logo header-logo">
-				<img src="./img/logo-header.svg" alt="logo"/>
+				<img src="./img/LOGO_RUS.svg" alt="logo"/>
 			</div>
 			<div class="address header-address">
                         <span class="icon icon-address"></span
@@ -110,7 +110,24 @@
 				Заказать звонок
 			</button>
 
-			<div class="lang header-lang">RUS</div>
+			<div class="lang header-lang">
+				<div class="dropdown">
+					<button class="header-lang__dropdown dropdown-toggle" type="button" id="dropdownMenuButton"
+					        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class='icon icon-flag_rus'></span><span>RUS</span>
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<div class="dropdown-select-wrapper">
+							<button class="select-item" type="button">
+								<span class="icon icon-flag_rus"></span><span>RUS</span>
+							</button>
+							<button class="select-item" type="button">
+								<span class="icon icon-flag_eng"></span><span>ENG</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="nav header-nav d-none d-lg-flex">
 			<nav class="container">
@@ -119,12 +136,12 @@
 							class="
                                     nav-list__item
                                     header-nav-list__item
-
+                                    header-nav-list__item--active
                                 "
 					>
 						<a class="nav__link" href="index.html"> Главная </a>
 					</li>
-					<li class="nav-list__item header-nav-list__item  header-nav-list__item--active">
+					<li class="nav-list__item header-nav-list__item">
 						<a class="nav__link" href="catalog.html">
 							Продукция
 						</a>
@@ -150,9 +167,28 @@
 			<div class="mobile-menu__header">
 				<img
 						class="mobile-menu__logo"
-						src="./img/logo-header.svg"
+						src="./img/LOGO_RUS.svg"
 						alt="logo"
 				/>
+				<div class="lang header-lang d-none">
+					<div class="dropdown">
+						<button class="header-lang__dropdown dropdown-toggle" type="button"
+						        id="dropdownMenuButtonMobile"
+						        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class='icon icon-flag_rus'></span><span>RUS</span>
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButtonMobile">
+							<div class="dropdown-select-wrapper">
+								<button class="select-item" type="button">
+									<span class="icon icon-flag_rus"></span><span>RUS</span>
+								</button>
+								<button class="select-item" type="button">
+									<span class="icon icon-flag_eng"></span><span>ENG</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="burger-btn">
 					<span></span>
 				</div>
@@ -176,10 +212,10 @@
 					</button>
 				</div>
 				<ul class="mobile-menu__list">
-					<li class="mobile-menu__list_item">
+					<li class="mobile-menu__list_item mobile-menu__list_item--active">
 						<a href="index.html">Главная</a>
 					</li>
-					<li class="mobile-menu__list_item  mobile-menu__list_item--active">
+					<li class="mobile-menu__list_item">
 						<a href="catalog.html">Продукция</a>
 					</li>
 					<li class="mobile-menu__list_item">
@@ -481,7 +517,7 @@
 			<div class="container">
 				<div class="info footer-info">
 					<div class="logo footer-logo">
-						<img src="./img/logo-header.svg" alt=""/>
+						<img src="./img/LOGO_RUS.svg" alt=""/>
 					</div>
 					<div
 							class="

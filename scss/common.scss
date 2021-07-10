@@ -284,6 +284,13 @@ a {
 	min-width: 270px;
 	padding: 20px 0 10px;
 
+    &__text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 140%;
+        color: #88929B;
+    }
+
     &__link {
         width: 30px;
         height: 30px;

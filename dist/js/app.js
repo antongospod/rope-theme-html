@@ -26,6 +26,7 @@ toggleMobileMenu(
     document.querySelector(".mobile-menu")
 );
 indicatorsLength();
+
 window.addEventListener(
     "resize",
     function () {
