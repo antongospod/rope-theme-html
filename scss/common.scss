@@ -91,6 +91,11 @@ table {
 .color-black {
     color: #000000 !important;
 }
+.hover-orange {
+    &:hover {
+        color: #f9bc02 !important;
+    }
+}
 
 .main-wrapper {
     height: 100vh;
@@ -209,7 +214,7 @@ a {
     cursor: pointer;
 
     &:hover {
-        color: #f9bc02 !important;
+        color: #f9bc02;
         text-decoration: none;
     }
 }

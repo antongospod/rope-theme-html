@@ -4,7 +4,7 @@ function toggleMobileMenu(node, menu, wrapper) {
         menu.classList.toggle("active");
         let lang = wrapper.querySelector(".lang");
         if (lang) {
-            lang.classList.toggle("d-none");
+            lang.classList.toggle("header-lang--show");
         }
         document.querySelector("body").classList.toggle("lock");
     });

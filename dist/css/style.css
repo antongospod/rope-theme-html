@@ -93,6 +93,10 @@ table tr {
   color: #000000 !important;
 }
 
+.hover-orange:hover {
+  color: #f9bc02 !important;
+}
+
 .main-wrapper {
   height: 100vh;
   display: flex;
@@ -213,7 +217,7 @@ a {
   cursor: pointer;
 }
 a:hover {
-  color: #f9bc02 !important;
+  color: #f9bc02;
   text-decoration: none;
 }
 
@@ -731,7 +735,7 @@ input {
   font-weight: 300;
   font-size: 20px;
   line-height: 100%;
-  color: #3B3D3E;
+  color: #3b3d3e;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -742,8 +746,19 @@ input {
 }
 @media screen and (max-width: 991px) {
   .header-lang {
-    margin: 0 68px 0 15px;
+    margin: 0;
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 2s ease;
   }
+}
+.header-lang--show {
+  width: 92px;
+  visibility: visible;
+  opacity: 1;
+  margin: 0 68px 0 15px;
+  transition: all 2s ease;
 }
 .header-lang__dropdown {
   border: none;
