@@ -1,13 +1,13 @@
 .catalog-page {
   max-width: 1920px;
   margin: 0 auto;
-  background: url("../img/трос-3.png") 0 0 no-repeat,
+  background: url("../img/трос-3.png") 0 25% /500px 830px no-repeat,
   url("../img/трос-4.png") 100% 30% no-repeat;
 }
 
 .catalog {
   padding-top: 24px;
-  min-height: 600px;
+  min-height: 1000px;
   padding-bottom: 100px;
 }
 
@@ -40,14 +40,17 @@
 
 .catalog .current-category {
   text-align: left;
-  padding-left: 25px;
   height: 36px;
 }
 
-.catalog .card {
+.catalog .catalog-item-card{
   max-width: 870px;
   padding: 25px;
   border-radius: 10px;
+
+  td, tr {
+    border: none;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -132,7 +135,6 @@
   .carousel-wrapper {
     width: 100%;
     height: 100%;
-
   }
 
   &__image {
@@ -328,19 +330,13 @@
 .more-list {
   width: 100%;
   position: relative;
-
-  h2 {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 120%;
-    text-align: left;
+  @media screen and (max-width: 992px) {
+    margin: 20px 0;
   }
 
   .catalog-card {
     width: 270px;
     height: 330px;
-    margin: 0 10px;
   }
 
   .controlls-wrapper {

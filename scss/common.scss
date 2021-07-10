@@ -51,6 +51,20 @@ h2 {
     }
 }
 
+.thin-header {
+    font-family: PFDinTextPro-Regular;
+    font-weight: light;
+    font-size: 36px;
+    line-height: 120%;
+    margin:5px 0 20px;
+    text-align: left;
+
+    @media screen and (max-width: 768px) {
+        font-weight: 500;
+        font-size: 24px;
+    }
+}
+
 img {
     width: 100%;
     height: auto;
@@ -408,14 +422,18 @@ input {
         color: #88929b;
     }
 }
+.slick-slide {
+    margin: 0 34px 0 0;
+}
 .request-link {
     border: none;
     background: none;
     border-bottom: 1px dashed $primary;
     cursor: pointer;
-    max-width: 122px;
+    max-width: 124px;
     text-align: center;
     color: $primary;
+    display: inline;
     &:hover {
         border-bottom: 1px solid #f9bc02;;
     }

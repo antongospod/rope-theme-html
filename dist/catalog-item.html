@@ -319,7 +319,7 @@
 							</nav>
 						</div>
 						<div class="end">
-							<h3 class="current-category"></h3>
+							<h2 class=" thin-header current-category"></h2>
 							<div
 									class="
                                             d-flex
@@ -462,7 +462,7 @@
 									</div>
 								</div>
 								<div class="more-list">
-									<h2>Возможно вас заинтересует</h2>
+									<h2 class="thin-header">Возможно вас заинтересует</h2>
 									<div class="controlls-wrapper">
 										<div class="prev"></div>
 										<div class="next"></div>
@@ -485,7 +485,7 @@
 															src="./img/Dried-Aubergines-Slices 1.png"
 															alt=""
 															class="
-                                                                    catalog-card__image
+                                                                    catalog-card__img
                                                                 "
 													/>
 												</div>
@@ -518,7 +518,7 @@
 															src="./img/Dried-Aubergines-Slices 1.png"
 															alt=""
 															class="
-                                                                    catalog-card__image
+                                                                    catalog-card__img
                                                                 "
 													/>
 												</div>
@@ -551,7 +551,7 @@
 															src="./img/Dried-Aubergines-Slices 1.png"
 															alt=""
 															class="
-                                                                    catalog-card__image
+                                                                    catalog-card__img
                                                                 "
 													/>
 												</div>
@@ -584,7 +584,7 @@
 															src="./img/Dried-Aubergines-Slices 1.png"
 															alt=""
 															class="
-                                                                    catalog-card__image
+                                                                    catalog-card__img
                                                                 "
 													/>
 												</div>
@@ -617,7 +617,7 @@
 															src="./img/Dried-Aubergines-Slices 1.png"
 															alt=""
 															class="
-                                                                    catalog-card__image
+                                                                    catalog-card__img
                                                                 "
 													/>
 												</div>
@@ -818,24 +818,20 @@
             nextArrow: $(".next"),
 
             // the magic
-            responsive: [
+            responsive: [       
                 {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        infinite: true,
-                    },
-                },
-                {
-                    breakpoint: 600,
+                    breakpoint: 1200,
                     settings: {
                         slidesToShow: 2,
-                        dots: true,
+                  
                     },
                 },
                 {
-                    breakpoint: 300,
-                    settings: "unslick", // destroys slick
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 1,
+                        dots: true,
+                    },
                 },
             ],
         });

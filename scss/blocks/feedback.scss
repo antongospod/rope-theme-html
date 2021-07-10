@@ -7,9 +7,6 @@
   height: 536px;
   background: url("../img/feedback-bg.png") 60% 0 no-repeat;
 
-  @media screen and (max-width: 880px) {
-    background-size: inherit;
-  }
 
   @media screen and (max-width: 880px) {
     height: 480px;
