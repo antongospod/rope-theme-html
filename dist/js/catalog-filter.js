@@ -35,7 +35,6 @@
                 if(document.documentElement.clientWidth < 991){
 
                     let catalogNav = document.querySelectorAll('.js-catalog-nav-list');
-                   catalogNav.classList.remove('side-menu__list--open')
                 }
 
                 let filterValue = item.getAttribute('data-category');

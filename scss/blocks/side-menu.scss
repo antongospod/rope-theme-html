@@ -55,8 +55,6 @@
 	}
 }
 
-
-
 .side-menu__list.active {
 	display: flex;
 	flex-direction: column;
@@ -70,11 +68,11 @@
 	border-bottom: 1px solid #efefef;
 	border-right: none;
 	border-top: 1px solid #efefef;
-	border-left: none;
+	border-left: 4px solid transparent;
 	font-weight: 300;
 	font-size: 20px;
 	line-height: 100%;
-	padding: 15px 24px;
+	padding: 15px 20px;
 	text-align: left;
     cursor: pointer;
 
