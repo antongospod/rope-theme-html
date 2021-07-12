@@ -12,7 +12,7 @@
     overflow: hidden;
 
     @include phone-only {
-      height: 500px;
+      height: 384px;
     }
 
     &-img {
@@ -61,8 +61,8 @@
         width: 320px;
         height: 237px;
         background-size: 90%;
-        top: 35%;
-        right: -50%;
+        top: 27%;
+        right: -37%;
       }
     }
 
@@ -76,6 +76,10 @@
       justify-content: start;
       align-items: flex-start;
       margin: 95px 0 0 0;
+
+      @media screen and (max-width: 768px) {
+        margin: 36px 0 0 0;
+      }
 
       &__header {
         margin: 0 0 17px;
@@ -94,7 +98,7 @@
         line-height: 120%;
         color: #3b3d3e;
         margin: 0 0 74px 0;
-        letter-spacing: 1.1px;
+        font-family: PFDinTextPro-Light;
 
         @media screen and (max-width: 768px) {
           font-weight: 300;
@@ -107,6 +111,13 @@
       .btn {
         width: 270px;
         padding: 15px;
+
+        @media screen and (max-width: 768px) {
+          width: 200px;
+          height: 40px;
+          padding: 10px;
+          font-size: 14px;
+        }
       }
     }
   }

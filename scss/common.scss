@@ -16,6 +16,13 @@
     src: local("pfdintextpro-medium"),
         url("./pfdintextpro-medium.ttf") format("truetype");
 }
+@font-face {
+    font-family: PFDinTextPro-Light;
+    font-style: normal;
+    font-weight:  normal;
+    src: local("pfdintextpro-medium"),
+    url("./pfdintextpro-light.ttf") format("truetype");
+}
 
 @font-face {
     font-family: PFDinTextPro-Bold;
@@ -36,7 +43,6 @@ h2 {
     font-size: 48px;
     line-height: 100%;
     color: #3b3d3e;
-    letter-spacing: 1.1px;
     font-family: PFDinTextPro-Medium;
 }
 h2 {
@@ -228,6 +234,7 @@ a {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: PFDinTextPro-Light;
 
     &__item {
         display: flex;
@@ -436,6 +443,7 @@ input {
         font-size: 13px;
         line-height: 16px;
         color: #88929b;
+        font-family: PFDinTextPro-Light;
     }
 }
 .slick-slide {
