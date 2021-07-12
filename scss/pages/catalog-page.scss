@@ -1,8 +1,9 @@
 .catalog-page {
   max-width: 1920px;
   margin: 0 auto;
-  background: url("../img/трос-3.png") 0 25% /500px 830px no-repeat,
-  url("../img/трос-4.png") 100% 30% no-repeat;
+  background: url("../img/трос-3.png") 0 25%/500px 830px no-repeat,
+  url("../img/трос-4.png") 100% 500px no-repeat;
+}
 
   @media screen and (max-width : 520px) {
     background: none;
@@ -343,6 +344,9 @@
   .catalog-card {
     width: 280px;
     min-height: 330px;
+  }
+  .slick-slide {
+    margin: 0 34px 0 0;
   }
 
   .controlls-wrapper {
