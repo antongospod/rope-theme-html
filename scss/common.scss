@@ -307,6 +307,10 @@ a {
         font-size: 16px;
         line-height: 140%;
         color: #88929b;
+
+        @include tablet-down{
+            font-size: 14px;
+        }
     }
 
     &__link {
@@ -498,6 +502,9 @@ input {
     cursor: pointer;
     padding: 0.75em 0;
     margin-top: 17px;
+    @include tablet-down{
+        font-size: 12px;
+    }
 }
 
 .breadcrumb-item::before {
@@ -510,6 +517,7 @@ input {
 
 .breadcrumb-item + .active {
     color: $primary;
+
     &:hover {
         text-decoration-line: underline;
         color: #f9bc02;
@@ -530,6 +538,10 @@ input {
     width: 10px;
     height: 10px;
     margin: 0 15px;
+
+    @include tablet-down{
+        margin:0 10px;
+    }
 }
 .pagination {
     border: #bcc3d2;

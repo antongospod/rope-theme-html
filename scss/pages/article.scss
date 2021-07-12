@@ -7,18 +7,32 @@
     background: url("assets/img/background/about-bg-1.png") 0 0 no-repeat,
         url("assets/img/background/about-bg-2.svg") 100% 72% no-repeat;
 
+    @include tablet-down{
+        font-size: 14px;
+        padding: 0;
+    }
+
     .heading {
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
         line-height: 140%;
         color: #3b3d3e;
+
+        @include tablet-down{
+            font-size: 16px;
+            line-height: 140%;
+        }
     }
 
     &__heading {
         font-size: 32px;
 		margin-bottom: 13px;
 		text-align: left;
+
+        @include tablet-down{
+            font-size: 18px;
+        }
     }
 
     &-tags {
@@ -36,6 +50,11 @@
             font-family: PFDinTextPro-Regular;
             color: $font-grey;
 
+            @include tablet-down{
+                margin-right: 18px;
+                font-size: 14px;
+            }
+
             &:last-child {
                 margin-right: 0;
             }
@@ -52,6 +71,15 @@
             height: 360px;
             width: 100%;
             overflow: hidden;
+            margin-bottom: 30px;
+
+            @include tablet-down{
+                border: 1px solid #E0E6EE;
+                box-sizing: border-box;
+                border-radius: 6px;
+                height: 211px;
+                margin-bottom: 15px;
+            }
 
             img {
                 margin: 0;
@@ -80,6 +108,8 @@
 
             @media screen and (max-width: 768px) {
                 float: none;
+                width: 260px;
+                height: 174px;
                 margin: 25px auto;
             }
         }
@@ -90,6 +120,10 @@
         max-width: 1200px;
         height: 100%;
         margin: 0 auto;
+
+        @media screen and (max-width: 768px) {
+            padding: 10px 15px;
+        }
     }
 
     dl {
@@ -109,6 +143,12 @@
             color: #3b3d3e;
             margin-top: 12px;
             min-height: 100px;
+
+            @include tablet-down{
+                font-size: 14px;
+                line-height: 140%;
+                padding: 12px 10px;
+            }
         }
     }
 
@@ -144,6 +184,14 @@
         height: 24px;
         border-radius: 50%;
         padding: 1px;
+
+        @media screen and (max-width: 768px) {
+            width: 20px;
+            height: 20px;
+            font-size: 14px;
+            line-height: 140%;
+            padding: 0;
+        }
     }
 
     blockquote  {
@@ -157,8 +205,13 @@
         background-size: 56px 44px;
 
         @media screen and (max-width: 768px) {
-            padding: 20px 31px 37px 74px;
+            padding: 20px 10px 20px 40px;
             background-position-y: 5%;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 14px;
+            background-size: 20px 16px;
+            background-position: 10px 24px;
         }
     }
 }
