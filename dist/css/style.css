@@ -508,6 +508,20 @@ input {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+.slick-list {
+  margin: 0 -5px;
+}
+
+.slick-slide > div {
+  padding: 0 5px;
+}
+
 .breadcrumb-item::before {
   display: none;
 }
@@ -853,7 +867,7 @@ input {
 }
 
 .catalog-card {
-  width: 270px;
+  width: 280px;
   min-height: 330px;
   height: 100%;
   background: #ffffff;
@@ -1826,6 +1840,7 @@ input {
   .start {
     max-width: 100%;
     margin-right: 0;
+    min-height: 270px;
   }
 }
 .end {
@@ -2116,8 +2131,8 @@ input {
   }
 }
 .more-list .catalog-card {
-  width: 270px;
-  height: 330px;
+  width: 280px;
+  min-height: 330px;
 }
 .more-list .controlls-wrapper {
   position: absolute;

@@ -506,7 +506,13 @@ input {
         font-size: 12px;
     }
 }
-
+.container {
+    @include phone-only{
+        padding: 0 20px;
+    }
+}
+.slick-list {margin: 0 -5px;}
+.slick-slide>div {padding: 0 5px;}
 .breadcrumb-item::before {
     display: none;
 }

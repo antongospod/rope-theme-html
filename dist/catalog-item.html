@@ -179,12 +179,12 @@
 		</div>
 		<div class="mobile-menu d-block d-lg-none">
 			<div class="mobile-menu__header">
-				<a href="index.html">	<img
-					class="mobile-menu__logo"
-					src="./img/LOGO_RUS.svg"
-					alt="logo"
-			/></a>
-			
+				<a href="index.html"> <img
+						class="mobile-menu__logo"
+						src="./img/LOGO_RUS.svg"
+						alt="logo"
+				/></a>
+
 				<div class="lang header-lang d-none">
 					<div class="dropdown">
 						<button class="header-lang__dropdown dropdown-toggle" type="button"
@@ -373,7 +373,7 @@
 											<div id="product-img-slider" class="carousel slide"
 											     data-ride="carousel">
 
-												<svg class="indicators-bg"
+												<svg class="indicators-bg" style="opacity: 0.5"
 												     fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path opacity="0.4"
 													      d="M0 0H75.6773C80.0371 0 83.8945 2.82465 85.2107 6.98108L92.5 30H0V0Z"
@@ -386,8 +386,7 @@
 													<li data-target="#product-img-slider" data-slide-to="1"></li>
 													<li data-target="#product-img-slider" data-slide-to="2"></li>
 												</ol>
-
-
+												
 												<div class="carousel-inner">
 													<div class="carousel-item active">
 														<div class="item-img">
@@ -854,12 +853,13 @@
             nextArrow: $(".next"),
 
             // the magic
-            responsive: [       
+            responsive: [
                 {
                     breakpoint: 1200,
                     settings: {
                         slidesToShow: 2,
-                  
+
+
                     },
                 },
                 {

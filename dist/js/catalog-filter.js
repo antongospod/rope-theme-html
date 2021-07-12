@@ -36,7 +36,7 @@
             ) {
                 return;
             }
-        
+
             if (document.documentElement.clientWidth < 991) {
                 toggleSideMenuMobile(document.querySelector('.control-btn'))
             }
